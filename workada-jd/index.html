@@ -4,62 +4,77 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nikhil Khedkar — AI Agent Evaluation Expert — Workada</title>
-<meta name="description" content="Contributor application to Workada: task design, reference solutions, and automated verification for AI agent evaluation, from a practitioner who grades the artifact, never the report.">
+<meta name="description" content="Contributor application to Workada from the founder of TeamBotics: launched AI products — LTB Buddy, RyFine, CodexSidecar, RedactorBuddy, MDownManager, Poko — and the evaluation practice behind them: task design, reference solutions, automated checks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=Zilla+Slab:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#fffaf0; --cream:#f9edce; --ink:#302923; --soft:#665950;
-  --gold:#e9b642; --gold2:#f2d480; --red:#a53e2e; --border:#d6cbb7; --white:#fffefb;
+  --ink:#272727; --ink-muted:#656565; --ink-meta:#555; --ink-faint:#6e6e6e;
+  --deep:#092e65; --blue:#1c6bbf; --cyan:#1db5da; --sky:#a7daef; --sky-pale:#c5e5f3;
+  --cream:#efebe3; --cream-deep:#ebe7de; --rule:#c9c2b4; --white:#fff;
+  --soft-blue:#e7ebf6; --dark:#181e25;
+  --hero-grad:linear-gradient(158deg,#093376 0%,#0c387b 25%,#0d60a1 50%,#1ba1d6 75%,#70cdea 100%);
+  --foot-grad:linear-gradient(151.5deg,#012a6f 0%,#022d73 5%,#023980 12%,#023d85 18%,#024b92 25%,#025ea4 32%,#0581c0 42%,#0e9bd2 50%,#18a6d9 54%,#27b0de 58%,#64c7e7 70%,#98d8ed 82%,#b3e1f1 92%,#bbe2f1 100%);
 }
 *{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.53}
-a{color:var(--red)}
-.shell{max-width:1110px;margin:0 auto;padding:0 28px}
-.sitebar{background:var(--white);border-bottom:1px solid var(--border)}
-.sitebar .shell{display:flex;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:14px;gap:16px;flex-wrap:wrap}
-.wordmark{font-size:17px;font-weight:850;letter-spacing:-.04em}
-.wordmark small{display:block;font-size:10.5px;font-weight:650;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
-nav a{font-size:13px;font-weight:650;color:var(--ink);text-decoration:none;margin-left:18px}
-nav a:hover{color:var(--red)}
-.pill{display:inline-block;background:#f7df9b;border-radius:99px;padding:4px 12px;font-size:11px;font-weight:700}
-.hero{padding:86px 0 84px;background:radial-gradient(circle at 86% 28%, #f5d36c 0, #f9eabc 26%, var(--paper) 60%)}
-.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.13em;font-weight:800;color:var(--red)}
-h1{font-size:clamp(42px,6.6vw,79px);letter-spacing:-.065em;line-height:1.02;margin:14px 0 18px}
-.lead{font-size:clamp(17px,2.2vw,22px);color:var(--soft);max-width:760px}
-.chips{margin:26px 0 30px;display:flex;flex-wrap:wrap;gap:8px}
-.chip{border:1px solid var(--border);background:var(--white);border-radius:99px;padding:5px 13px;font-size:12.5px;font-weight:650}
-.btn{display:inline-block;padding:11px 20px;border-radius:7px;font-weight:700;font-size:14px;text-decoration:none;margin-right:10px}
-.btn-solid{background:var(--ink);color:#fff7e6}
-.btn-ghost{border:1px solid var(--ink);color:var(--ink)}
-section{padding:70px 0;border-bottom:1px solid var(--border)}
-.kicker{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--red);font-weight:800}
-h2{font-size:clamp(27px,3.7vw,42px);letter-spacing:-.048em;margin:10px 0 8px}
-.deck{font-size:18px;color:var(--soft);max-width:720px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:34px}
-.card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:27px;min-height:220px}
-.card .num{font-size:12px;font-weight:850;color:var(--red)}
-.card h3{font-size:23px;letter-spacing:-.03em;margin:8px 0 10px}
-.card p{color:var(--soft);font-size:15px;margin:0}
-.status{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;background:var(--cream);border:1px solid var(--border);border-radius:99px;padding:3px 10px;margin-bottom:10px}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"Libre Franklin",Arial,Helvetica,sans-serif;line-height:1.55;font-size:16px}
+h1,h2,h3{font-family:"Zilla Slab",Georgia,serif;letter-spacing:-.5px;margin:0}
+a{color:var(--blue)}
+.shell{max-width:1145px;margin:0 auto;padding:0 28px}
+.sitebar{background:var(--cream);border-bottom:1px solid var(--rule)}
+.sitebar .shell{display:flex;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px;gap:16px;flex-wrap:wrap}
+.wordmark{font-family:"Zilla Slab",Georgia,serif;font-size:21px;font-weight:700;letter-spacing:-.4px}
+.wordmark small{display:block;font-family:"Libre Franklin",sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-muted)}
+nav a{font-size:13.5px;font-weight:600;color:var(--ink);text-decoration:none;margin-left:20px}
+nav a:hover{color:var(--deep)}
+.pill{display:inline-block;background:#000;color:#fff;border-radius:999px;padding:7px 15px;font-size:11.5px;font-weight:700;letter-spacing:.02em}
+.hero{background:var(--hero-grad);color:#fff;padding:92px 0 88px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background-image:radial-gradient(circle closest-side, rgba(29,181,218,.35) 0 33%, transparent 36%);background-size:26px 26px;opacity:.35;pointer-events:none}
+.hero .shell{position:relative;z-index:1}
+.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.14em;font-weight:800;color:var(--sky)}
+.hero h1{font-size:clamp(40px,6.2vw,72px);line-height:1.04;font-weight:600;margin:16px 0 20px;max-width:900px}
+.lead{font-size:clamp(17px,2.1vw,21px);color:#eaf6fc;max-width:780px}
+.chips{margin:28px 0 32px;display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid rgba(255,255,255,.55);background:rgba(255,255,255,.12);border-radius:999px;padding:5px 14px;font-size:12.5px;font-weight:600;color:#fff}
+.btn{display:inline-block;padding:12px 24px;border-radius:999px;font-weight:700;font-size:14.5px;text-decoration:none;margin-right:10px}
+.btn-black{background:#000;color:#fff}
+.btn-white{background:#fff;color:var(--deep)}
+section{padding:72px 0;border-bottom:1px solid var(--rule)}
+.band{background:var(--cream-deep)}
+.kicker{font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--deep);font-weight:800}
+h2{font-size:clamp(28px,3.6vw,42px);letter-spacing:-.48px;font-weight:600;margin:10px 0 8px}
+.deck{font-size:17.5px;color:var(--ink-muted);max-width:740px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
+.card{background:var(--white);border:1px solid var(--rule);border-radius:16px;padding:26px;min-height:210px}
+.card .num{font-size:12px;font-weight:800;color:var(--cyan);font-family:"Libre Franklin",sans-serif}
+.card h3{font-size:23px;letter-spacing:-.36px;margin:8px 0 10px;font-weight:600}
+.card p{color:var(--ink-muted);font-size:14.5px;margin:0}
+.status{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;background:var(--soft-blue);color:var(--deep);border-radius:999px;padding:4px 11px;margin-bottom:12px}
 .tags{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px}
-.tag{font-size:11px;font-weight:650;border:1px solid var(--border);border-radius:99px;padding:2px 9px;color:var(--soft)}
-.view{display:inline-block;margin-top:14px;font-weight:700;font-size:13.5px;text-decoration:none}
-.method{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:30px;font-weight:800;font-size:15px}
-.method .step{background:var(--white);border:1px solid var(--border);border-radius:7px;padding:10px 16px}
-.method .arr{color:var(--red)}
+.tag{font-size:11px;font-weight:600;border:1px solid var(--rule);border-radius:999px;padding:2px 9px;color:var(--ink-meta)}
+.view{display:inline-block;margin-top:14px;font-weight:700;font-size:13.5px;text-decoration:none;color:var(--deep)}
+.view:hover{color:var(--cyan)}
+.wide-card{margin-top:16px;background:var(--white);border:1px solid var(--rule);border-radius:16px;padding:22px 26px;color:var(--ink-muted);font-size:14.5px}
+.wide-card strong{color:var(--ink)}
+.method{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:30px;font-weight:700;font-size:15px}
+.method .step{background:var(--white);border:1px solid var(--rule);border-radius:999px;padding:10px 18px}
+.method .arr{color:var(--cyan);font-weight:800}
 .rows{margin-top:30px}
-.row{display:grid;grid-template-columns:250px 1fr;gap:22px;padding:20px 0;border-top:1px solid var(--border)}
-.row .wk{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--red);font-weight:800;padding-top:3px}
-.row h3{margin:0 0 6px;font-size:19px;letter-spacing:-.02em}
-.row p{margin:0;color:var(--soft);font-size:15px}
-.callout{background:var(--cream);border-left:4px solid var(--red);padding:23px;font-size:17px;margin-top:36px}
-.cta{background:var(--ink);color:#fff7e6;padding:64px 0}
-.cta h2{color:#fff7e6}
-.cta .deck{color:#e8dcc4}
-.btn-gold{background:var(--gold);color:var(--ink)}
-footer{background:#211b17;color:#cabba7;font-size:12px;padding:22px 0}
+.row{display:grid;grid-template-columns:250px 1fr;gap:22px;padding:20px 0;border-top:1px solid var(--rule)}
+.row .wk{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--deep);font-weight:800;padding-top:3px}
+.row h3{margin:0 0 6px;font-size:20px;letter-spacing:-.32px;font-weight:600}
+.row p{margin:0;color:var(--ink-muted);font-size:15px}
+.callout{background:var(--soft-blue);border-left:4px solid var(--deep);border-radius:0 12px 12px 0;padding:23px 25px;font-size:17px;margin-top:38px;font-family:"Zilla Slab",Georgia,serif}
+.cta-sec{background:var(--foot-grad);padding:76px 0;border-bottom:none}
+.cta-card{background:var(--white);border-radius:20px;padding:44px;max-width:820px}
+.cta-card h2{margin-top:0}
+.cta-card .deck{margin-bottom:26px}
+.btn-outline{border:1.5px solid var(--deep);color:var(--deep);background:transparent}
+footer{background:var(--deep);color:var(--sky-pale);font-size:12.5px;padding:24px 0}
 footer .shell{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
-footer a{color:#f2d480}
-@media (max-width:820px){.grid{grid-template-columns:1fr}.row{grid-template-columns:1fr}}
+footer a{color:#fff}
+@media (max-width:860px){.grid{grid-template-columns:1fr}.row{grid-template-columns:1fr}.cta-card{padding:30px}}
 </style>
 </head>
 <body>
@@ -68,9 +83,9 @@ footer a{color:#f2d480}
   <div class="shell">
     <div class="wordmark">Nikhil Khedkar<small>AI Agent Evaluation · Toronto, Canada</small></div>
     <nav>
+      <a href="#products">Products</a>
       <a href="#principles">Principles</a>
-      <a href="#evidence">Evidence</a>
-      <a href="#method">Method</a>
+      <a href="#practice">Practice</a>
       <a href="#first-tasks">First tasks</a>
     </nav>
     <span class="pill">Workada — Contributor Application</span>
@@ -81,7 +96,7 @@ footer a{color:#f2d480}
   <div class="shell">
     <div class="eyebrow">AI Agent Evaluation Expert — Application to Workada</div>
     <h1>The standard an agent is measured against should be built by someone who has watched agents fail.</h1>
-    <p class="lead">I turn problems from my own practice into self-contained tasks — a clear brief, a prepared environment, a reference solution, and automated checks on the final result. Then I grade the artifact, never the agent's report of it.</p>
+    <p class="lead">I am the founder of TeamBotics. I ship AI products — LTB Buddy, RyFine, CodexSidecar, RedactorBuddy, MDownManager, Poko — and the tasks I would write for Workada come straight from building them: the briefs, environments, reference builds, and automated checks my own products had to pass.</p>
     <div class="chips">
       <span class="chip">Toronto, Canada</span>
       <span class="chip">Linux terminal, daily</span>
@@ -90,16 +105,68 @@ footer a{color:#f2d480}
       <span class="chip">Reference solutions</span>
       <span class="chip">Automated checks</span>
     </div>
-    <a class="btn btn-solid" href="#evidence">See the evidence</a>
-    <a class="btn btn-ghost" href="mailto:nikhil.d.khedkar@gmail.com">Email me</a>
+    <a class="btn btn-black" href="#products">See the products</a>
+    <a class="btn btn-white" href="mailto:nikhil.d.khedkar@gmail.com">Email me</a>
   </div>
 </div>
 
-<section id="principles">
+<section id="products">
+  <div class="shell">
+    <div class="kicker">TeamBotics — launched products</div>
+    <h2>The practice the tasks come from</h2>
+    <p class="deck">Every product below was built by directing AI agents through written briefs and verified against reference builds and automated checks. Each one is a source of tasks an agent can genuinely fail — drawn from real work, not invented for an application.</p>
+    <div class="grid">
+      <div class="card">
+        <span class="status">Public beta</span>
+        <h3>LTB Buddy</h3>
+        <p>Guided intake that turns Ontario tenants' plain-language complaints into structured, filing-ready applications — filing preparation at $50 against published paralegal rates of $150 to $350 an hour, with a clinic briefing program live. Building it meant reverse-engineering the real tribunal portal; my audit exposed a three-stage pipeline there that silently strips filers' formatting.</p>
+        <div class="tags"><span class="tag">Guided intake</span><span class="tag">High-stakes workflow</span><span class="tag">Portal audit</span></div>
+        <a class="view" href="https://ltbbuddy.ca">ltbbuddy.ca →</a>
+      </div>
+      <div class="card">
+        <span class="status">Live</span>
+        <h3>RyFine</h3>
+        <p>Prompt refinement product: turns rough intent into structured, provider-ready prompts through an inspectable assembly process with built-in quality scoring. Privacy-first by design — bring-your-own-key, browser AI, and local models, no forced cloud.</p>
+        <div class="tags"><span class="tag">Prompt systems</span><span class="tag">Built-in scoring</span><span class="tag">Privacy-first</span></div>
+        <a class="view" href="https://www.ryfine.app">ryfine.app →</a>
+      </div>
+      <div class="card">
+        <span class="status">Release prep</span>
+        <h3>CodexSidecar</h3>
+        <p>Local-first Codex console with a dedicated agent: the operator's seat for delegated coding work, with session state, approvals, and evidence in one place. Release candidates verified across Windows and Linux.</p>
+        <div class="tags"><span class="tag">Agent console</span><span class="tag">Approvals</span><span class="tag">Cross-platform</span></div>
+      </div>
+      <div class="card">
+        <span class="status">Early access</span>
+        <h3>RedactorBuddy</h3>
+        <p>Local desktop tool that strips personal identifiers from financial documents before any outside AI sees the numbers: three-pass redaction, fail-closed export, local audit ledger. The math survives; the identities do not.</p>
+        <div class="tags"><span class="tag">Local-first</span><span class="tag">PII redaction</span><span class="tag">Fail-closed</span></div>
+        <a class="view" href="https://redactorbuddy.com">redactorbuddy.com →</a>
+      </div>
+      <div class="card">
+        <span class="status">Live</span>
+        <h3>MDownManager</h3>
+        <p>Local-first markdown knowledge layer that indexes, summarizes, and exposes documentation to human and agent workflows without forcing cloud storage — the substrate my agents are briefed from and graded against.</p>
+        <div class="tags"><span class="tag">Knowledge layer</span><span class="tag">Agent workflows</span><span class="tag">Local-first</span></div>
+        <a class="view" href="https://mdownmanager.com">mdownmanager.com →</a>
+      </div>
+      <div class="card">
+        <span class="status">Live</span>
+        <h3>Poko</h3>
+        <p>Desktop companion that reacts in real time to coding-agent sessions — Claude Code, Codex, Cursor, Copilot, and more: permission prompts, subagent states, completion alerts. Agent-session observability shipped as a consumer product.</p>
+        <div class="tags"><span class="tag">Agent observability</span><span class="tag">Desktop</span><span class="tag">Real-time</span></div>
+        <a class="view" href="https://poko.teambotics.app">poko.teambotics.app →</a>
+      </div>
+    </div>
+    <div class="wide-card"><strong>Also launched:</strong> Claim Checker (live — claim verification against primary sources) · Code2Motion (early access — browser-native creative platform) · StoryTeller (sourced-narrative system with provenance checks) · DyKnow (knowledge-governance CLI and MCP server) · EasyBuddy (frontline onboarding) · FileBuddy (local-first file assistant).</div>
+  </div>
+</section>
+
+<section id="principles" class="band">
   <div class="shell">
     <div class="kicker">How I build a task</div>
     <h2>Three principles, learned from grading real agent work</h2>
-    <p class="deck">Every task I write follows the same discipline I use to run my own multi-agent operation at TeamBotics.</p>
+    <p class="deck">The same discipline I use to run my own multi-agent operation at TeamBotics.</p>
     <div class="grid">
       <div class="card">
         <div class="num">01</div>
@@ -120,24 +187,16 @@ footer a{color:#f2d480}
   </div>
 </section>
 
-<section id="evidence">
+<section id="practice">
   <div class="shell">
-    <div class="kicker">Selected evidence</div>
-    <h2>Evaluation work, already shipped</h2>
-    <p class="deck">These are not samples made for this application. They are the practice the tasks would be drawn from.</p>
+    <div class="kicker">Evaluation practice</div>
+    <h2>Grading agents is the day job</h2>
     <div class="grid">
       <div class="card">
         <span class="status">Completed study · 2026</span>
         <h3>Agent Harness Bake-Off</h3>
         <p>Two independently built agent harnesses evaluated against a shared broker layer: adversarial task briefs, sandboxed environments, reference implementations, cross-grading, and an adversarial second phase. The serious defects lived in the shared layer — where a single-harness test never looks.</p>
         <div class="tags"><span class="tag">Task design</span><span class="tag">Sandboxed environments</span><span class="tag">Cross-grading</span></div>
-      </div>
-      <div class="card">
-        <span class="status">Live product</span>
-        <h3>Claim Checker</h3>
-        <p>Decomposes public claims into atomic, checkable units and verifies each against primary sources under a published verdict taxonomy. The public dogfood audit graded 16 atoms from a live news product: Confirmed, Partially, Self-reported, Unverifiable, Contradicted.</p>
-        <div class="tags"><span class="tag">Verification</span><span class="tag">Rubric design</span><span class="tag">Primary sources</span></div>
-        <a class="view" href="https://claimchecker.teambotics.app">View product →</a>
       </div>
       <div class="card">
         <span class="status">Published audit</span>
@@ -147,32 +206,15 @@ footer a{color:#f2d480}
         <a class="view" href="https://frontdoor.teambotics.app">View audit →</a>
       </div>
       <div class="card">
-        <span class="status">Delivered report · 2026</span>
-        <h3>LTB Portal Audit</h3>
-        <p>A behavioural audit of a production government portal that traced a three-stage formatting pipeline silently stripping filers' line breaks, punctuation, and paragraph structure between entry, review, and the generated PDF. A data-loss defect no screenshot would catch.</p>
-        <div class="tags"><span class="tag">Failure hunting</span><span class="tag">Systems behaviour</span></div>
-      </div>
-      <div class="card">
-        <span class="status">Live protocol</span>
-        <h3>4Age — Agent Communication Protocol</h3>
-        <p>A human-approved protocol for agent-to-agent work, running across a live multi-agent mesh. Its two rules govern every delegated task I brief and grade.</p>
-        <div class="tags"><span class="tag">Agent operations</span><span class="tag">Authority design</span></div>
-      </div>
-      <div class="card">
-        <span class="status">Framework</span>
-        <h3>CAF — Capability Awareness Failure</h3>
-        <p>A failure taxonomy I coined for the most common way strong agents lose: failing to use a capability they already have, and handing the step back to the human as homework. It is the lens I bring to finding where a workflow breaks.</p>
-        <div class="tags"><span class="tag">Failure taxonomy</span><span class="tag">Adversarial eye</span></div>
+        <span class="status">Live protocol · Framework</span>
+        <h3>4Age and CAF</h3>
+        <p>4Age is my human-approved protocol for agent-to-agent work, running across a live multi-agent mesh. CAF — Capability Awareness Failure — is the failure taxonomy I coined for agents that fail to use capabilities they already have. Together: the operating rules and the grading lens behind every delegated task I run.</p>
+        <div class="tags"><span class="tag">Agent operations</span><span class="tag">Failure taxonomy</span></div>
       </div>
     </div>
     <div class="callout">No action without authority. No memory without a source. — the two rules every agent working for me operates under, and the standard my checks enforce.</div>
-  </div>
-</section>
-
-<section id="method">
-  <div class="shell">
-    <div class="kicker">Method</div>
-    <h2>How a problem from my practice becomes a Task</h2>
+    <div class="kicker" style="margin-top:52px">Method</div>
+    <h2 style="font-size:clamp(24px,3vw,34px)">How a problem from my practice becomes a Task</h2>
     <div class="method">
       <span class="step">Brief</span><span class="arr">→</span>
       <span class="step">Environment</span><span class="arr">→</span>
@@ -184,7 +226,7 @@ footer a{color:#f2d480}
   </div>
 </section>
 
-<section id="first-tasks">
+<section id="first-tasks" class="band">
   <div class="shell">
     <div class="kicker">First tasks</div>
     <h2>Three tasks I would bring first</h2>
@@ -215,17 +257,17 @@ footer a{color:#f2d480}
   </div>
 </section>
 
-<div class="cta">
+<section class="cta-sec">
   <div class="shell">
-    <div class="kicker" style="color:var(--gold)">Contact</div>
-    <h2>Put me on the tasks your best agents still fail.</h2>
-    <p class="deck">Based in Toronto, working on my own schedule, fluent in the terminal. My products and audits are public — inspect them before we talk.</p>
-    <p style="margin-top:26px">
-      <a class="btn btn-gold" href="mailto:nikhil.d.khedkar@gmail.com">nikhil.d.khedkar@gmail.com</a>
-      <a class="btn btn-ghost" style="border-color:#fff7e6;color:#fff7e6" href="https://www.teambotics.app">teambotics.app</a>
-    </p>
+    <div class="cta-card">
+      <div class="kicker">Contact</div>
+      <h2>Put me on the tasks your best agents still fail.</h2>
+      <p class="deck">Based in Toronto, working on my own schedule, fluent in the terminal. My products and audits are public — inspect them before we talk.</p>
+      <a class="btn btn-black" href="mailto:nikhil.d.khedkar@gmail.com">nikhil.d.khedkar@gmail.com</a>
+      <a class="btn btn-outline" href="https://www.teambotics.app">teambotics.app</a>
+    </div>
   </div>
-</div>
+</section>
 
 <footer>
   <div class="shell">
