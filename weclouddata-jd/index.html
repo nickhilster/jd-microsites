@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nikhil Khedkar — Forward Deployed Engineering Instructor · WeCloudData</title>
+<style>
+:root{--paper:#fffaf0;--cream:#f9edce;--ink:#302923;--soft:#665950;--gold:#e9b642;--gold2:#f2d480;--red:#a53e2e;--border:#d6cbb7;--white:#fffefb}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.53}
+a{color:inherit}
+.shell{max-width:1110px;margin:0 auto;padding:0 28px}
+.sitebar{background:var(--white);border-bottom:1px solid var(--border)}
+.sitebar-in{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px;flex-wrap:wrap}
+.wordmark{font-size:17px;font-weight:850;letter-spacing:-.04em}
+.wordmark small{display:block;font-size:10.5px;font-weight:650;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+nav{display:flex;gap:20px;font-size:13px;font-weight:650}
+nav a{text-decoration:none}
+.pill{background:#f7df9b;border-radius:99px;padding:5px 12px;font-size:11px;font-weight:750}
+.hero{background:radial-gradient(circle at 86% 28%,#f5d36c 0,#f9eabc 26%,#fffaf0 60%);padding:86px 0 84px;border-bottom:1px solid var(--border)}
+.eyebrow{color:var(--red);font-size:12px;text-transform:uppercase;letter-spacing:.13em;font-weight:800;margin-bottom:18px}
+h1{font-size:clamp(42px,6.6vw,79px);letter-spacing:-.065em;line-height:1.02;font-weight:850;max-width:13em}
+.lead{font-size:clamp(17px,2.2vw,22px);color:var(--soft);max-width:44em;margin-top:22px}
+.ctas{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:7px;font-weight:700;font-size:15px;text-decoration:none}
+.btn-solid{background:var(--ink);color:#fff7e6}
+.btn-line{border:1px solid var(--ink);color:var(--ink)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:30px}
+.chip{border:1px solid var(--border);background:var(--white);border-radius:99px;padding:5px 13px;font-size:12.5px;font-weight:650}
+section{padding:70px 0;border-bottom:1px solid var(--border)}
+.kicker{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--red);font-weight:800}
+h2{font-size:clamp(27px,3.7vw,42px);letter-spacing:-.048em;line-height:1.08;margin:10px 0 12px}
+.deck{font-size:18px;color:var(--soft);max-width:46em}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:34px}
+.card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:27px;min-height:220px}
+.card .num{color:var(--red);font-size:12px;font-weight:850}
+.card h3{font-size:23px;letter-spacing:-.03em;margin:8px 0 10px;line-height:1.15}
+.card p{font-size:15px;color:var(--soft)}
+.tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:var(--cream);border-radius:5px;padding:3px 8px;margin-bottom:10px}
+.card a{font-weight:700;font-size:14px;text-decoration:none;color:var(--red)}
+.method{display:flex;gap:0;flex-wrap:wrap;margin-top:30px;border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.method div{flex:1;min-width:140px;background:var(--white);padding:18px;border-right:1px solid var(--border)}
+.method div:last-child{border-right:none}
+.method b{display:block;font-size:15px}
+.method span{font-size:13px;color:var(--soft)}
+.plan{display:grid;grid-template-columns:1.25fr 1fr;gap:44px;margin-top:34px}
+.step{border-top:1px solid var(--border);padding:16px 0;display:grid;grid-template-columns:85px 1fr;gap:14px}
+.step .wk{color:var(--red);font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;padding-top:3px}
+.step h4{font-size:17px;margin-bottom:4px}
+.step p{font-size:14.5px;color:var(--soft)}
+.mrow{display:flex;border-top:1px solid var(--border);padding:13px 0;font-size:15px}
+.mrow .lab{width:110px;flex:none;color:var(--red);font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.08em;padding-top:3px}
+.callout{background:var(--cream);border-left:4px solid var(--red);padding:23px;font-size:17px;margin-top:34px}
+.ctaband{background:var(--ink);color:#fff7e6;padding:64px 0}
+.ctaband h2{color:#fff7e6}
+.ctaband .deck{color:#e8dcc4}
+.btn-gold{background:var(--gold);color:var(--ink);margin-top:24px}
+footer{background:#211b17;color:#cabba7;font-size:12px;padding:26px 0}
+.foot-in{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:820px){.cards{grid-template-columns:1fr}.plan{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="sitebar"><div class="shell sitebar-in">
+  <div class="wordmark">NK / Nikhil Khedkar<small>Forward Deployed Engineering · Instructor</small></div>
+  <nav><a href="#evidence">Evidence</a><a href="#method">Method</a><a href="#plan">The six weeks</a></nav>
+  <div class="pill">Applying: FDE Instructor (Contract)</div>
+</div></div>
+
+<header class="hero"><div class="shell">
+  <div class="eyebrow">WeCloudData · Overseas Bootcamp · Forward Deployed Engineering</div>
+  <h1>Forward deployment is a field discipline. So is teaching it.</h1>
+  <p class="lead">I am not a traditional teacher, and that is the point. I build and run production AI systems every day — RAG pipelines, agents under human-approval controls, evaluated claim by claim — and my teaching grew out of training rooms where the audiences ranged from new employees to senior customers who had never trusted a smartphone. FDE is learned deployed, at the client, under real constraints. That is exactly how I teach it.</p>
+  <div class="ctas"><a class="btn btn-solid" href="#evidence">See the evidence</a><a class="btn btn-line" href="#plan">How I would run the six weeks</a></div>
+  <div class="chips"><span class="chip">Toronto · Remote / Onsite</span><span class="chip">Applied AI and agents</span><span class="chip">RAG in production</span><span class="chip">Teaching and mentoring</span><span class="chip">Evaluation and governance</span></div>
+</div></header>
+
+<section><div class="shell">
+  <div class="kicker">How I teach</div>
+  <h2>Three principles, learned on the floor.</h2>
+  <p class="deck">A bootcamp is a deployment with students. The habits that make deployments work are the habits that make teaching work.</p>
+  <div class="cards">
+    <div class="card"><div class="num">01</div><h3>Build first, lecture second.</h3><p>Every concept lands on a working system the same day it is introduced. Students meet RAG by querying a live pipeline, and agents by approving — and refusing — real agent actions.</p></div>
+    <div class="card"><div class="num">02</div><h3>Narrate the work.</h3><p>Say what you are about to do, and why, before you do it. Narration is how a learner stays oriented inside unfamiliar machinery — and how a deployed engineer keeps a client's trust.</p></div>
+    <div class="card"><div class="num">03</div><h3>Adapt to the person in front of you.</h3><p>An explanation is not finished when it is correct; it is finished when the learner can act on it. I have taught new hires and senior citizens in the same week. Range is the job.</p></div>
+  </div>
+</div></section>
+
+<section id="evidence"><div class="shell">
+  <div class="kicker">Selected evidence</div>
+  <h2>The syllabus is my production stack.</h2>
+  <p class="deck">Each bootcamp topic maps to a system I currently run — and to teaching I have already done.</p>
+  <div class="cards">
+    <div class="card"><span class="tag">Live</span><h3>NikBot — RAG in production</h3><p>Embeddings, vector search and grounding rules over 73 documents, with smoke tests on every release. The RAG and evaluation units, running live for students to interrogate.</p><p style="margin-top:10px"><a href="https://nikdesign.ca">View product →</a></p></div>
+    <div class="card"><span class="tag">Live</span><h3>4Age and the agent mesh</h3><p>Agents with tool calling, memory and orchestration, held to human approval for consequential actions. Agent engineering with security and governance built in.</p><p style="margin-top:10px"><a href="https://teambotics.app">View product →</a></p></div>
+    <div class="card"><span class="tag">Live practice</span><h3>Claim Checker — evaluation</h3><p>247 tests across 32 production deployments, every claim anchored to a primary source. How students learn to test what an LLM system says against what it can prove.</p><p style="margin-top:10px"><a href="https://github.com/nickhilster/claim-checker">View product →</a></p></div>
+    <div class="card"><span class="tag">Teaching</span><h3>Best Buy training rooms</h3><p>Training sessions for employees, and tech-training sessions for senior customers, delivered in person over two years of leading a service team of 18 — the widest audience range a teacher can get.</p></div>
+    <div class="card"><span class="tag">Live</span><h3>Muse for Seniors</h3><p>An AI-literacy experience I designed for older adults, including a scam-defence module. Curriculum design for the least technical audience there is.</p><p style="margin-top:10px"><a href="https://muse.teambotics.app/seniors">View product →</a></p></div>
+    <div class="card"><span class="tag">Public beta</span><h3>LTB Buddy — the capstone arc</h3><p>A full-stack AI product carried from discovery to deployment for non-technical users. Requirements, architecture, build, validation, release — the shape of the students' client capstone, done commercially.</p><p style="margin-top:10px"><a href="https://ltbbuddy.ca">View product →</a></p></div>
+  </div>
+</div></section>
+
+<section id="method"><div class="shell">
+  <div class="kicker">Method</div>
+  <h2>The capstone is the curriculum.</h2>
+  <div class="method">
+    <div><b>Discover</b><span>Client discovery and requirements — taught as a skill, not a phase.</span></div>
+    <div><b>Specify</b><span>Architecture students can defend: application, model, data, integration.</span></div>
+    <div><b>Build</b><span>Labs on live-grade stacks: LLMs, RAG, agents, APIs, cloud deployment.</span></div>
+    <div><b>Validate</b><span>Testing and evaluation of the system, and of its claims.</span></div>
+    <div><b>Present</b><span>Executive presentations where judgment, not slides, is graded.</span></div>
+  </div>
+  <div class="callout">“The explanation is not finished when it is correct. It is finished when the person in front of you can act on it.”</div>
+</div></section>
+
+<section id="plan"><div class="shell">
+  <div class="kicker">The six weeks</div>
+  <h2>How I would run the bootcamp.</h2>
+  <div class="plan">
+    <div>
+      <div class="step"><div class="wk">Weeks 1–2</div><div><h4>Foundations on live systems</h4><p>Lectures and labs anchored to working deployments from day one: LLM application patterns, prompt engineering, RAG pipelines and agent basics, each ending in something a student built and can break safely.</p></div></div>
+      <div class="step"><div class="wk">Weeks 3–4</div><div><h4>The implementation case study</h4><p>Mentored end-to-end builds: architecture reviews, troubleshooting sessions, evaluation checkpoints, and the governance pass — security, guardrails, human-in-the-loop — before anything is called done.</p></div></div>
+      <div class="step"><div class="wk">Weeks 5–6</div><div><h4>The client capstone</h4><p>Discovery, requirements and delivery for a real client, with deployment-readiness reviews and executive-presentation coaching. Students leave with a system, and the judgment to defend it.</p></div></div>
+    </div>
+    <div>
+      <div class="mrow"><div class="lab">Systems</div><div>4 live AI products and one production agent mesh</div></div>
+      <div class="mrow"><div class="lab">RAG</div><div>73 documents, vector index, grounding rules, smoke tests</div></div>
+      <div class="mrow"><div class="lab">Evaluation</div><div>247 tests across 32 production deployments</div></div>
+      <div class="mrow"><div class="lab">Teaching</div><div>Employees and senior customers, Best Buy (2022–2024); Muse for Seniors (live)</div></div>
+      <div class="mrow"><div class="lab">Teams</div><div>Led 18; mentored specialists and project managers</div></div>
+      <div class="mrow"><div class="lab">Program</div><div>Available for the full six weeks, onboarding included</div></div>
+    </div>
+  </div>
+</div></section>
+
+<div class="ctaband"><div class="shell">
+  <div class="kicker" style="color:var(--gold)">The conversation</div>
+  <h2>Bring me students who would rather build.</h2>
+  <p class="deck">If the bootcamp needs an instructor who still ships — and who can teach a system while it is running — I am ready to talk.</p>
+  <a class="btn btn-gold" href="mailto:nikhil.d.khedkar@gmail.com">nikhil.d.khedkar@gmail.com</a>
+</div></div>
+
+<footer><div class="shell foot-in">
+  <div>Nikhil Khedkar · Toronto · 647-530-8918 · linkedin.com/in/nikhil-khedkar · nikdesign.ca</div>
+  <div>This page and the accompanying application were prepared with AI assistance under Nikhil Khedkar's direction.</div>
+</div></footer>
+</body>
+</html>
