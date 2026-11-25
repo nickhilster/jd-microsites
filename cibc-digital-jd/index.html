@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nikhil Khedkar — Consultant, Digital Product · CIBC</title>
+<style>
+:root{--paper:#fffaf0;--cream:#f9edce;--ink:#302923;--soft:#665950;--gold:#e9b642;--gold2:#f2d480;--red:#a53e2e;--border:#d6cbb7;--white:#fffefb}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.53}
+a{color:inherit}
+.shell{max-width:1110px;margin:0 auto;padding:0 28px}
+.sitebar{background:var(--white);border-bottom:1px solid var(--border)}
+.sitebar-in{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px;flex-wrap:wrap}
+.wordmark{font-size:17px;font-weight:850;letter-spacing:-.04em}
+.wordmark small{display:block;font-size:10.5px;font-weight:650;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+nav{display:flex;gap:20px;font-size:13px;font-weight:650}
+nav a{text-decoration:none}
+.pill{background:#f7df9b;border-radius:99px;padding:5px 12px;font-size:11px;font-weight:750}
+.hero{background:radial-gradient(circle at 86% 28%,#f5d36c 0,#f9eabc 26%,#fffaf0 60%);padding:86px 0 84px;border-bottom:1px solid var(--border)}
+.eyebrow{color:var(--red);font-size:12px;text-transform:uppercase;letter-spacing:.13em;font-weight:800;margin-bottom:18px}
+h1{font-size:clamp(42px,6.6vw,79px);letter-spacing:-.065em;line-height:1.02;font-weight:850;max-width:13em}
+.lead{font-size:clamp(17px,2.2vw,22px);color:var(--soft);max-width:44em;margin-top:22px}
+.ctas{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:7px;font-weight:700;font-size:15px;text-decoration:none}
+.btn-solid{background:var(--ink);color:#fff7e6}
+.btn-line{border:1px solid var(--ink);color:var(--ink)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:30px}
+.chip{border:1px solid var(--border);background:var(--white);border-radius:99px;padding:5px 13px;font-size:12.5px;font-weight:650}
+section{padding:70px 0;border-bottom:1px solid var(--border)}
+.kicker{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--red);font-weight:800}
+h2{font-size:clamp(27px,3.7vw,42px);letter-spacing:-.048em;line-height:1.08;margin:10px 0 12px}
+.deck{font-size:18px;color:var(--soft);max-width:46em}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:34px}
+.card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:27px;min-height:220px}
+.card .num{color:var(--red);font-size:12px;font-weight:850}
+.card h3{font-size:23px;letter-spacing:-.03em;margin:8px 0 10px;line-height:1.15}
+.card p{font-size:15px;color:var(--soft)}
+.tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:var(--cream);border-radius:5px;padding:3px 8px;margin-bottom:10px}
+.card a{font-weight:700;font-size:14px;text-decoration:none;color:var(--red)}
+.loop{display:flex;gap:0;flex-wrap:wrap;margin-top:30px;border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.loop div{flex:1;min-width:140px;background:var(--white);padding:18px;border-right:1px solid var(--border)}
+.loop div:last-child{border-right:none}
+.loop b{display:block;font-size:15px}
+.loop span{font-size:13px;color:var(--soft)}
+.plan{display:grid;grid-template-columns:1.25fr 1fr;gap:44px;margin-top:34px}
+.step{border-top:1px solid var(--border);padding:16px 0;display:grid;grid-template-columns:85px 1fr;gap:14px}
+.step .wk{color:var(--red);font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;padding-top:3px}
+.step h4{font-size:17px;margin-bottom:4px}
+.step p{font-size:14.5px;color:var(--soft)}
+.mrow{display:flex;border-top:1px solid var(--border);padding:13px 0;font-size:15px}
+.mrow .lab{width:110px;flex:none;color:var(--red);font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.08em;padding-top:3px}
+.callout{background:var(--cream);border-left:4px solid var(--red);padding:23px;font-size:17px;margin-top:34px}
+.ctaband{background:var(--ink);color:#fff7e6;padding:64px 0}
+.ctaband h2{color:#fff7e6}
+.ctaband .deck{color:#e8dcc4}
+.btn-gold{background:var(--gold);color:var(--ink);margin-top:24px}
+footer{background:#211b17;color:#cabba7;font-size:12px;padding:26px 0}
+.foot-in{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:820px){.cards{grid-template-columns:1fr}.plan{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="sitebar"><div class="shell sitebar-in">
+  <div class="wordmark">NK / Nikhil Khedkar<small>Digital Product · Strategy to Delivery</small></div>
+  <nav><a href="#loop">The arc</a><a href="#evidence">Evidence</a><a href="#plan">First 90 days</a></nav>
+  <div class="pill">Applying: Consultant, Digital Product</div>
+</div></div>
+
+<header class="hero"><div class="shell">
+  <div class="eyebrow">CIBC · Digital Product · Toronto, Hybrid</div>
+  <h1>Strategy, carried through to benefit.</h1>
+  <p class="lead">Your posting describes a complete arc: shape opportunities, roadmaps and business cases; lead discovery; define epics, stories and requirements; align stakeholders; and measure outcomes after launch. That arc is my working method — across a portfolio of shipped digital products, a platform role in a regulated enterprise, and a client operation measured on its KPIs every single month.</p>
+  <div class="ctas"><a class="btn btn-solid" href="#evidence">See the evidence</a><a class="btn btn-line" href="#plan">My first 90 days</a></div>
+  <div class="chips"><span class="chip">Roadmaps and business cases</span><span class="chip">Discovery</span><span class="chip">Epics, stories, acceptance criteria</span><span class="chip">KPIs and benefits realization</span><span class="chip">Stakeholder alignment</span></div>
+</div></header>
+
+<section id="loop"><div class="shell">
+  <div class="kicker">The arc</div>
+  <h2>How an opportunity becomes a measured outcome.</h2>
+  <div class="loop">
+    <div><b>Shape</b><span>Client needs, business objectives and platform capabilities connected into opportunities, roadmaps and business cases — benefits and sequencing clear.</span></div>
+    <div><b>Discover</b><span>Ambiguity framed with the clients and partners who live it, until the initiative is scoped tightly enough to execute.</span></div>
+    <div><b>Define</b><span>Epics, user stories, requirements and acceptance criteria that are clear, testable and tied to outcomes.</span></div>
+    <div><b>Align</b><span>Complex problems distilled into narratives and trade-offs that product, business and technology can decide on together.</span></div>
+    <div><b>Measure</b><span>KPIs set upfront and tracked after launch against the business case — the roadmap adjusted on evidence.</span></div>
+  </div>
+  <div class="callout">A roadmap is a promise about outcomes, not a list of features. The discipline is defining the benefit before the build — and reporting on it after.</div>
+</div></section>
+
+<section id="evidence"><div class="shell">
+  <div class="kicker">Selected evidence</div>
+  <h2>Digital product work, end to end.</h2>
+  <div class="cards">
+    <div class="card"><span class="tag">Portfolio</span><h3>TeamBotics — strategy and roadmaps, owned</h3><p>A portfolio of shipped digital products, each taken from opportunity framing through business case, roadmap, delivery and post-launch review. Benefits and success measures defined before build, tracked after launch.</p></div>
+    <div class="card"><span class="tag">Live</span><h3>LTB Buddy — discovery with real partners</h3><p>Legal clinics piloting the product serve as discovery partners: their needs became requirements and acceptance criteria, and their adoption is the tracked benefit. Public beta, about 50 signups.</p><p style="margin-top:10px"><a href="https://ltbbuddy.ca">View product →</a></p></div>
+    <div class="card"><span class="tag">Enterprise</span><h3>RBH — platform work in a regulated enterprise</h3><p>Three concurrent platform initiatives reporting to a Director: business cases, sequencing, and business, technology and compliance stakeholders aligned on requirements — including the human-review standard for an AI initiative.</p></div>
+    <div class="card"><span class="tag">Outcomes</span><h3>Best Buy — KPIs defined, then delivered</h3><p>A client service team of 18, reported on Power BI dashboards to store and regional leadership: turnaround from about five business days to under 48 hours; NPS first in the network for 16 consecutive months.</p></div>
+    <div class="card"><span class="tag">Live</span><h3>Muse for Seniors — client-centred by design</h3><p>A digital experience designed from direct discovery with its audience: plain language, trust at every step, and success measured by whether clients actually complete what they came to do.</p><p style="margin-top:10px"><a href="https://muse.teambotics.app/seniors">View product →</a></p></div>
+    <div class="card"><span class="tag">Live practice</span><h3>Claim Checker — analysis to an institutional standard</h3><p>Sourced audits under a published fairness framework, including 247 tests across 32 live deployments. Analytical thinking, documented end to end, with corrections tracked in the open.</p><p style="margin-top:10px"><a href="https://github.com/nickhilster/claim-checker">View product →</a></p></div>
+  </div>
+</div></section>
+
+<section id="plan"><div class="shell">
+  <div class="kicker">First 90 days</div>
+  <h2>Learn the portfolio, then own an outcome.</h2>
+  <div class="plan">
+    <div>
+      <div class="step"><div class="wk">Days 1–30</div><div><h4>Map the landscape</h4><p>The Digital Product portfolio, active initiatives and their business cases; the squads, Product Owners and stakeholders behind them; the client journeys each one serves. Deliverable: a clear view of where benefits are promised and how they are being tracked.</p></div></div>
+      <div class="step"><div class="wk">Days 31–60</div><div><h4>Take a defined scope</h4><p>Ownership of a scoped initiative or opportunity area: discovery completed, epics and stories refined with the squad, acceptance criteria agreed, success measures baselined.</p></div></div>
+      <div class="step"><div class="wk">Days 61–90</div><div><h4>Deliver and report the benefit</h4><p>First delivery through the squad, with post-launch performance reported against the business case — and the next opportunity shaped from what the evidence shows.</p></div></div>
+    </div>
+    <div>
+      <div class="mrow"><div class="lab">Turnaround</div><div>About 5 business days to under 48 hours</div></div>
+      <div class="mrow"><div class="lab">Satisfaction</div><div>NPS first in network, 16 consecutive months</div></div>
+      <div class="mrow"><div class="lab">Team</div><div>Client service operation of 18, full KPI accountability</div></div>
+      <div class="mrow"><div class="lab">Programs</div><div>3 concurrent platform initiatives, regulated enterprise</div></div>
+      <div class="mrow"><div class="lab">Products</div><div>Portfolio of live digital products, discovery to benefit</div></div>
+      <div class="mrow"><div class="lab">Testing</div><div>247 tests across 32 production deployments</div></div>
+    </div>
+  </div>
+</div></section>
+
+<div class="ctaband"><div class="shell">
+  <div class="kicker" style="color:var(--gold)">The conversation</div>
+  <h2>Ask me how I would shape your next opportunity.</h2>
+  <p class="deck">Every digital portfolio has an initiative whose benefit was promised and never quite tracked. I would welcome the chance to walk through how I frame an opportunity, write its business case, and report on what it actually delivered.</p>
+  <a class="btn btn-gold" href="mailto:nikhil.d.khedkar@gmail.com">nikhil.d.khedkar@gmail.com</a>
+</div></div>
+
+<footer><div class="shell foot-in">
+  <div>Nikhil Khedkar · Toronto · 647-530-8918 · linkedin.com/in/nikhil-khedkar · nikdesign.ca</div>
+  <div>This page and the accompanying application were prepared with AI assistance under Nikhil Khedkar's direction.</div>
+</div></footer>
+</body>
+</html>
