@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nikhil Khedkar — AI-Native Software Developer · WeVend</title>
+<style>
+:root{--paper:#fffaf0;--cream:#f9edce;--ink:#302923;--soft:#665950;--gold:#e9b642;--gold2:#f2d480;--red:#a53e2e;--border:#d6cbb7;--white:#fffefb}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.53}
+a{color:inherit}
+.shell{max-width:1110px;margin:0 auto;padding:0 28px}
+.sitebar{background:var(--white);border-bottom:1px solid var(--border)}
+.sitebar-in{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px;flex-wrap:wrap}
+.wordmark{font-size:17px;font-weight:850;letter-spacing:-.04em}
+.wordmark small{display:block;font-size:10.5px;font-weight:650;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+nav{display:flex;gap:20px;font-size:13px;font-weight:650}
+nav a{text-decoration:none}
+.pill{background:#f7df9b;border-radius:99px;padding:5px 12px;font-size:11px;font-weight:750}
+.hero{background:radial-gradient(circle at 86% 28%,#f5d36c 0,#f9eabc 26%,#fffaf0 60%);padding:86px 0 84px;border-bottom:1px solid var(--border)}
+.eyebrow{color:var(--red);font-size:12px;text-transform:uppercase;letter-spacing:.13em;font-weight:800;margin-bottom:18px}
+h1{font-size:clamp(42px,6.6vw,79px);letter-spacing:-.065em;line-height:1.02;font-weight:850;max-width:13em}
+.lead{font-size:clamp(17px,2.2vw,22px);color:var(--soft);max-width:44em;margin-top:22px}
+.ctas{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:7px;font-weight:700;font-size:15px;text-decoration:none}
+.btn-solid{background:var(--ink);color:#fff7e6}
+.btn-line{border:1px solid var(--ink);color:var(--ink)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:30px}
+.chip{border:1px solid var(--border);background:var(--white);border-radius:99px;padding:5px 13px;font-size:12.5px;font-weight:650}
+section{padding:70px 0;border-bottom:1px solid var(--border)}
+.kicker{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--red);font-weight:800}
+h2{font-size:clamp(27px,3.7vw,42px);letter-spacing:-.048em;line-height:1.08;margin:10px 0 12px}
+.deck{font-size:18px;color:var(--soft);max-width:46em}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:34px}
+.card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:27px;min-height:220px}
+.card .num{color:var(--red);font-size:12px;font-weight:850}
+.card h3{font-size:23px;letter-spacing:-.03em;margin:8px 0 10px;line-height:1.15}
+.card p{font-size:15px;color:var(--soft)}
+.tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:var(--cream);border-radius:5px;padding:3px 8px;margin-bottom:10px}
+.card a{font-weight:700;font-size:14px;text-decoration:none;color:var(--red)}
+.loop{display:flex;gap:0;flex-wrap:wrap;margin-top:30px;border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.loop div{flex:1;min-width:140px;background:var(--white);padding:18px;border-right:1px solid var(--border)}
+.loop div:last-child{border-right:none}
+.loop b{display:block;font-size:15px}
+.loop span{font-size:13px;color:var(--soft)}
+.plan{display:grid;grid-template-columns:1.25fr 1fr;gap:44px;margin-top:34px}
+.step{border-top:1px solid var(--border);padding:16px 0;display:grid;grid-template-columns:85px 1fr;gap:14px}
+.step .wk{color:var(--red);font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;padding-top:3px}
+.step h4{font-size:17px;margin-bottom:4px}
+.step p{font-size:14.5px;color:var(--soft)}
+.mrow{display:flex;border-top:1px solid var(--border);padding:13px 0;font-size:15px}
+.mrow .lab{width:110px;flex:none;color:var(--red);font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.08em;padding-top:3px}
+.callout{background:var(--cream);border-left:4px solid var(--red);padding:23px;font-size:17px;margin-top:34px}
+.ctaband{background:var(--ink);color:#fff7e6;padding:64px 0}
+.ctaband h2{color:#fff7e6}
+.ctaband .deck{color:#e8dcc4}
+.btn-gold{background:var(--gold);color:var(--ink);margin-top:24px}
+footer{background:#211b17;color:#cabba7;font-size:12px;padding:26px 0}
+.foot-in{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:820px){.cards{grid-template-columns:1fr}.plan{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="sitebar"><div class="shell sitebar-in">
+  <div class="wordmark">NK / Nikhil Khedkar<small>AI-Native Developer · Agent-Directed Builder</small></div>
+  <nav><a href="#work">Shipped work</a><a href="#environment">The environment</a><a href="#verify">Verification</a></nav>
+  <div class="pill">Applying: AI-Native Software Developer</div>
+</div></div>
+
+<header class="hero"><div class="shell">
+  <div class="eyebrow">WeVend · AI-Native Software Developer · North York, Hybrid</div>
+  <h1>The agents write the code. I make sure it is right.</h1>
+  <p class="lead">Your posting asks candidates to show their work. This page is mine: the shipped products, the agent environment I own, and the verification practice that decides whether anything counts as done. Since 2024 I have directed coding agents full-time — 9,378 GitHub contributions in 2026 — and the fleet below is live.</p>
+  <div class="ctas"><a class="btn btn-solid" href="#work">See the shipped work</a><a class="btn btn-line" href="https://github.com/nickhilster">github.com/nickhilster</a></div>
+  <div class="chips"><span class="chip">Spec-first builds</span><span class="chip">Project instructions in every repo</span><span class="chip">MCP connections, owned</span><span class="chip">Diff review</span><span class="chip">Tests before trust</span><span class="chip">Secrets out of agent context</span></div>
+</div></header>
+
+<section id="work"><div class="shell">
+  <div class="kicker">Show your work</div>
+  <h2>Shipped products, built by agents I directed.</h2>
+  <p class="deck">Every card is a live product or a public repository. The pattern is the same in each: I wrote the spec and the project instructions, directed the build in small reviewable steps, ran the verification, and made the ship call.</p>
+  <div class="cards">
+    <div class="card"><span class="tag">Live</span><h3>RyFine</h3><p>Flagship prompt-refinement product, iterated in public. Its architecture designs API-key sprawl out — bring-your-own-key, browser AI and local models instead of a key vault.</p><p style="margin-top:10px"><a href="https://ryfine.app">ryfine.app →</a></p></div>
+    <div class="card"><span class="tag">Live</span><h3>LTB Buddy</h3><p>Legal-workflow product in public beta (about 50 signups), with a browser portal assistant that walks a government filing portal step by step. Test suites green end to end — 55 of 55 in the latest recorded run.</p><p style="margin-top:10px"><a href="https://ltbbuddy.ca">ltbbuddy.ca →</a></p></div>
+    <div class="card"><span class="tag">Live · MCP</span><h3>Plex MCP Bridge</h3><p>An MCP server I built and operate: 48 read-only tools for agents, reachable only on my private network, behind a token fetched per session and never stored in the repo. Permissions designed, not defaulted.</p><p style="margin-top:10px"><a href="https://github.com/nickhilster/plex-media-workflows">Repository →</a></p></div>
+    <div class="card"><span class="tag">Live · Protocol</span><h3>4Age</h3><p>A protocol I wrote for agent-to-agent communication with a human approval gate: agents may draft, but nothing sends without a human approving the exact text. It governs my multi-agent operation today.</p><p style="margin-top:10px"><a href="https://github.com/nickhilster/4age">Repository →</a></p></div>
+    <div class="card"><span class="tag">Live</span><h3>NikBot</h3><p>Retrieval-grounded assistant in production: 73 documents in Supabase behind an HNSW vector index, deterministic seeding, grounding rules hardened against traced hallucinations, and a production smoke test run after changes.</p><p style="margin-top:10px"><a href="https://nikdesign.ca">nikdesign.ca →</a></p></div>
+    <div class="card"><span class="tag">Live</span><h3>Fielo Chatbot</h3><p>Retrieval chatbot over a 164-page corpus, built and deployed in a day, then scored 16 of 16 on a live evaluation after a retrieval-scoring fix. Spec, build, evaluate, fix, re-verify.</p><p style="margin-top:10px"><a href="https://fielo-bot.teambotics.app">fielo-bot.teambotics.app →</a></p></div>
+    <div class="card"><span class="tag">Live practice</span><h3>Claim Checker</h3><p>A verification practice with published fairness standards. Its flagship audit ran 247 tests against 32 live AI deployments: 3 pass, 42 partial, 202 fail. Evidence first, conclusions earned.</p><p style="margin-top:10px"><a href="https://github.com/nickhilster/claim-checker">Repository →</a></p></div>
+    <div class="card"><span class="tag">Live</span><h3>Muse for Seniors</h3><p>AI-literacy product teaching seniors to use AI safely, including a scam-defence module. Agent-built, human-verified, plain language throughout.</p><p style="margin-top:10px"><a href="https://muse.teambotics.app/seniors">View product →</a></p></div>
+    <div class="card"><span class="tag">Shipped</span><h3>FileBuddy and CodexSidecar</h3><p>Local-first file tooling with a Python core and a 63-test suite as its acceptance gate — and a Tauri desktop console (TypeScript, Rust) for running and reviewing coding-agent sessions. Tooling for the workflow itself.</p><p style="margin-top:10px"><a href="https://teambotics.app">teambotics.app →</a></p></div>
+  </div>
+</div></section>
+
+<section id="environment"><div class="shell">
+  <div class="kicker">The agent environment</div>
+  <h2>Owned, not inherited.</h2>
+  <div class="loop">
+    <div><b>Spec</b><span>Requirements become instructions, acceptance criteria and test cases an agent can build from — pressure-tested before any code exists.</span></div>
+    <div><b>Instruct</b><span>Every repo carries its instruction file: architecture, standards, standing rules. Persistent per-project agent sessions reuse context instead of re-buying it.</span></div>
+    <div><b>Connect</b><span>MCP servers built and maintained by me; tool access scoped read-only by default; secrets in secure storage, fetched per session, never in a repo.</span></div>
+    <div><b>Direct</b><span>Small steps, easy to review and roll back. Branches, worktrees and pull requests across a five-machine fleet.</span></div>
+    <div><b>Verify</b><span>Tests, CI, blob-hash checks on every push, and live checks against the served artifact. An agent report is a claim until the artifact confirms it.</span></div>
+  </div>
+  <div class="callout">Proof of the hygiene standard: before one of my repositories went public in November 2026, I scanned its full history for credential-shaped values, rotated the live access token on the server, scrubbed the committed values — and only then flipped it public. In that order.</div>
+</div></section>
+
+<section id="verify"><div class="shell">
+  <div class="kicker">Verification</div>
+  <h2>The numbers behind the practice.</h2>
+  <div class="plan">
+    <div>
+      <div class="step"><div class="wk">Tests</div><div><h4>Suites as acceptance gates</h4><p>LTB Buddy portal-assistant suites green at 55 of 55; FileBuddy at 61 of 63 with 2 Windows-only skips; NikBot guarded by a production smoke test after every change.</p></div></div>
+      <div class="step"><div class="wk">Pushes</div><div><h4>Blob-for-blob, every time</h4><p>Every push to a deployment-linked repository is verified by comparing git blob hashes against the tested local tree. A green build is not proof; the served page is.</p></div></div>
+      <div class="step"><div class="wk">Review</div><div><h4>Diffs read, not waved through</h4><p>Agent output is reviewed line by line where it matters, and logic errors that pass the tests are the specific thing I hunt. Small bugs I fix directly; the rest goes back with a sharper spec.</p></div></div>
+    </div>
+    <div>
+      <div class="mrow"><div class="lab">Commits</div><div>9,378 GitHub contributions in 2026</div></div>
+      <div class="mrow"><div class="lab">Fleet</div><div>5 machines, Linux and Windows, one agent mesh</div></div>
+      <div class="mrow"><div class="lab">MCP</div><div>48 read-only tools, token-gated, private network only</div></div>
+      <div class="mrow"><div class="lab">Audit</div><div>247 tests across 32 live deployments</div></div>
+      <div class="mrow"><div class="lab">Support</div><div>Geek Squad team of 18 led for 2 years at Best Buy</div></div>
+      <div class="mrow"><div class="lab">Products</div><div>A dozen live or shipped, listed above</div></div>
+    </div>
+  </div>
+</div></section>
+
+<div class="ctaband"><div class="shell">
+  <div class="kicker" style="color:var(--gold)">The practical</div>
+  <h2>Your 60-minute practical is, more or less, my Tuesday.</h2>
+  <p class="deck">Scope a small enhancement, direct the agent, catch what the tests miss, talk through the judgment calls. That is the session I run every working day — I would welcome yours.</p>
+  <a class="btn btn-gold" href="mailto:nikhil.d.khedkar@gmail.com">nikhil.d.khedkar@gmail.com</a>
+</div></div>
+
+<footer><div class="shell foot-in">
+  <div>Nikhil Khedkar · Toronto · 647-530-8918 · linkedin.com/in/nikhil-khedkar · github.com/nickhilster</div>
+  <div>This page and the accompanying application were prepared with AI assistance under Nikhil Khedkar's direction.</div>
+</div></footer>
+</body>
+</html>
