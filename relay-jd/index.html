@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nikhil Khedkar — Relay Open Call · The Problem I Ran Toward</title>
+<style>
+:root{--paper:#fffaf0;--cream:#f9edce;--ink:#302923;--soft:#665950;--gold:#e9b642;--gold2:#f2d480;--red:#a53e2e;--border:#d6cbb7;--white:#fffefb}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.53}
+a{color:inherit}
+.shell{max-width:1110px;margin:0 auto;padding:0 28px}
+.sitebar{background:var(--white);border-bottom:1px solid var(--border)}
+.sitebar-in{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px;flex-wrap:wrap}
+.wordmark{font-size:17px;font-weight:850;letter-spacing:-.04em}
+.wordmark small{display:block;font-size:10.5px;font-weight:650;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+nav{display:flex;gap:20px;font-size:13px;font-weight:650}
+nav a{text-decoration:none}
+.pill{background:#f7df9b;border-radius:99px;padding:5px 12px;font-size:11px;font-weight:750}
+.hero{background:radial-gradient(circle at 86% 28%,#f5d36c 0,#f9eabc 26%,#fffaf0 60%);padding:86px 0 84px;border-bottom:1px solid var(--border)}
+.eyebrow{color:var(--red);font-size:12px;text-transform:uppercase;letter-spacing:.13em;font-weight:800;margin-bottom:18px}
+h1{font-size:clamp(42px,6.6vw,79px);letter-spacing:-.065em;line-height:1.02;font-weight:850;max-width:13em}
+.lead{font-size:clamp(17px,2.2vw,22px);color:var(--soft);max-width:44em;margin-top:22px}
+.ctas{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:7px;font-weight:700;font-size:15px;text-decoration:none}
+.btn-solid{background:var(--ink);color:#fff7e6}
+.btn-line{border:1px solid var(--ink);color:var(--ink)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:30px}
+.chip{border:1px solid var(--border);background:var(--white);border-radius:99px;padding:5px 13px;font-size:12.5px;font-weight:650}
+section{padding:70px 0;border-bottom:1px solid var(--border)}
+.kicker{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--red);font-weight:800}
+h2{font-size:clamp(27px,3.7vw,42px);letter-spacing:-.048em;line-height:1.08;margin:10px 0 12px}
+.deck{font-size:18px;color:var(--soft);max-width:46em}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:34px}
+.card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:27px;min-height:220px}
+.card .num{color:var(--red);font-size:12px;font-weight:850}
+.card h3{font-size:23px;letter-spacing:-.03em;margin:8px 0 10px;line-height:1.15}
+.card p{font-size:15px;color:var(--soft)}
+.tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:var(--cream);border-radius:5px;padding:3px 8px;margin-bottom:10px}
+.card a{font-weight:700;font-size:14px;text-decoration:none;color:var(--red)}
+.loop{display:flex;gap:0;flex-wrap:wrap;margin-top:30px;border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.loop div{flex:1;min-width:140px;background:var(--white);padding:18px;border-right:1px solid var(--border)}
+.loop div:last-child{border-right:none}
+.loop b{display:block;font-size:15px}
+.loop span{font-size:13px;color:var(--soft)}
+.plan{display:grid;grid-template-columns:1.25fr 1fr;gap:44px;margin-top:34px}
+.step{border-top:1px solid var(--border);padding:16px 0;display:grid;grid-template-columns:85px 1fr;gap:14px}
+.step .wk{color:var(--red);font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;padding-top:3px}
+.step h4{font-size:17px;margin-bottom:4px}
+.step p{font-size:14.5px;color:var(--soft)}
+.mrow{display:flex;border-top:1px solid var(--border);padding:13px 0;font-size:15px}
+.mrow .lab{width:110px;flex:none;color:var(--red);font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.08em;padding-top:3px}
+.callout{background:var(--cream);border-left:4px solid var(--red);padding:23px;font-size:17px;margin-top:34px}
+.ctaband{background:var(--ink);color:#fff7e6;padding:64px 0}
+.ctaband h2{color:#fff7e6}
+.ctaband .deck{color:#e8dcc4}
+.btn-gold{background:var(--gold);color:var(--ink);margin-top:24px}
+footer{background:#211b17;color:#cabba7;font-size:12px;padding:26px 0}
+.foot-in{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:820px){.cards{grid-template-columns:1fr}.plan{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="sitebar"><div class="shell sitebar-in">
+  <div class="wordmark">NK / Nikhil Khedkar<small>Builder · Founder, TeamBotics</small></div>
+  <nav><a href="#problem">The problem</a><a href="#built">What I built</a><a href="#approach">Approach</a></nav>
+  <div class="pill">Relay Open Call · Builders and Problem Solvers</div>
+</div></div>
+
+<header class="hero"><div class="shell">
+  <div class="eyebrow">The challenge · A problem a small business owner might face</div>
+  <h1>A small operator, alone, against an institutional process.</h1>
+  <p class="lead">Your challenge asks for a problem a small business owner might face, and how I would solve it. This is the one I already ran toward. Ontario's Landlord and Tenant Board puts small landlords — self-made owners with a unit or two, no staff, no lawyer — and the tenants across from them through a process of dozens of forms, strict deadlines and a filing portal that defeats most first-time users. The professionals bill by the hour. Everyone else faces it alone. I built the guide: LTB Buddy, a conversational AI that is live today.</p>
+  <div class="ctas"><a class="btn btn-solid" href="https://ltbbuddy.ca">See LTB Buddy live</a><a class="btn btn-line" href="#built">What I built</a></div>
+  <div class="chips"><span class="chip">Champion the self-made</span><span class="chip">Run toward problems</span><span class="chip">Take big swings</span><span class="chip">Built, not proposed</span></div>
+</div></header>
+
+<section id="problem"><div class="shell">
+  <div class="kicker">The problem, framed</div>
+  <h2>Complexity is a tax. It falls hardest on the smallest people in the room.</h2>
+  <div class="loop">
+    <div><b>The setting</b><span>A tribunal process designed for professionals: form numbers, filing deadlines, a portal that assumes you have done this before.</span></div>
+    <div><b>The people</b><span>Small landlords running a business of one or two units. Tenants one missed step from losing their home. Legal clinics with a handful of staff serving both.</span></div>
+    <div><b>The gap</b><span>Help exists — at professional hourly rates. For everyone else, the instructions are written for someone else.</span></div>
+    <div><b>How I met it</b><span>From inside it, as a participant — the way your owners meet their problems. The framing that survived: this is a design problem, not a knowledge problem.</span></div>
+  </div>
+  <div class="callout">Nobody assigned me this problem. There was no brief, no client, no funding line. It was broken and unclear, so I stepped in.</div>
+</div></section>
+
+<section id="built"><div class="shell">
+  <div class="kicker">What I built</div>
+  <h2>LTB Buddy — live, tested, and used by clinics.</h2>
+  <div class="cards">
+    <div class="card"><span class="tag">Live · Public beta</span><h3>The product</h3><p>A conversational AI that guides people through the tribunal process: which form, which deadline, which step next — plus a browser assistant that walks the actual filing portal step by step. About 50 signups in beta; legal clinics in the pilot cohort use it with real clients.</p><p style="margin-top:10px"><a href="https://ltbbuddy.ca">ltbbuddy.ca →</a></p></div>
+    <div class="card"><span class="tag">The research</span><h3>Earned, not assumed</h3><p>To build honestly I read and coded 46 adjudicator orders and mapped 26 recurring landlord tactics across 37 more. Primary sources — the system as it actually behaves, not as its website describes it.</p></div>
+    <div class="card"><span class="tag">The proof</span><h3>Tested against the real thing</h3><p>The portal assistant is tested against the live government portal it supports; its suites run green end to end — 55 of 55 in the latest recorded run. Clinics using it find the breaks; the fixes ship from their feedback.</p></div>
+    <div class="card"><span class="tag">The studio</span><h3>TeamBotics</h3><p>LTB Buddy is one product from a small studio with one pattern: find where complexity crushes the little operator, build the guide, ship it, evaluate it honestly, refine it with users.</p><p style="margin-top:10px"><a href="https://teambotics.app">teambotics.app →</a></p></div>
+  </div>
+</div></section>
+
+<section id="approach"><div class="shell">
+  <div class="kicker">Approach</div>
+  <h2>Why I answered this way.</h2>
+  <div class="plan">
+    <div>
+      <div class="step"><div class="wk">Choice</div><div><h4>A shipped product, not a fresh proposal</h4><p>Your challenge invites a new idea. I answered with a built one — because a built thing is evidence and a proposal is a claim, and I would rather be accountable for the former.</p></div></div>
+      <div class="step"><div class="wk">Boundary</div><div><h4>Nothing sketched for your roadmap</h4><p>I have deliberately not designed anything for Relay's domain in this submission. Your roadmap belongs to the people who will own it. What I am showing you is how I work.</p></div></div>
+      <div class="step"><div class="wk">Loop</div><div><h4>Build, deploy, evaluate, refine</h4><p>With the users inside the loop from the first version — clinics, clients, and the people the process was failing.</p></div></div>
+    </div>
+    <div>
+      <div class="mrow"><div class="lab">Status</div><div>LTB Buddy live in public beta, about 50 signups</div></div>
+      <div class="mrow"><div class="lab">Research</div><div>46 orders coded · 26 tactics across 37 orders</div></div>
+      <div class="mrow"><div class="lab">Testing</div><div>Portal-assistant suites 55 of 55 green</div></div>
+      <div class="mrow"><div class="lab">Users</div><div>Community legal clinics in a pilot cohort</div></div>
+      <div class="mrow"><div class="lab">Base</div><div>Toronto · in office Tue–Thu works</div></div>
+    </div>
+  </div>
+</div></section>
+
+<div class="ctaband"><div class="shell">
+  <div class="kicker" style="color:var(--gold)">The conversation</div>
+  <h2>Ask me about the problem I ran toward.</h2>
+  <p class="deck">Or about any of the others. Running toward them is the job I have given myself — I would welcome the chance to do it on your team.</p>
+  <a class="btn btn-gold" href="mailto:nikhil.d.khedkar@gmail.com">nikhil.d.khedkar@gmail.com</a>
+</div></div>
+
+<footer><div class="shell foot-in">
+  <div>Nikhil Khedkar · Toronto · 647-530-8918 · linkedin.com/in/nikhil-khedkar · github.com/nickhilster</div>
+  <div>This page and the accompanying submission were prepared with AI assistance under Nikhil Khedkar's direction — as Relay's call invites.</div>
+</div></footer>
+</body>
+</html>
