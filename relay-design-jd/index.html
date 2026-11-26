@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nikhil Khedkar — Senior Product Designer · Relay</title>
+<style>
+:root{--paper:#fffaf0;--cream:#f9edce;--ink:#302923;--soft:#665950;--gold:#e9b642;--gold2:#f2d480;--red:#a53e2e;--border:#d6cbb7;--white:#fffefb}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.53}
+a{color:inherit}
+.shell{max-width:1110px;margin:0 auto;padding:0 28px}
+.sitebar{background:var(--white);border-bottom:1px solid var(--border)}
+.sitebar-in{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px;flex-wrap:wrap}
+.wordmark{font-size:17px;font-weight:850;letter-spacing:-.04em}
+.wordmark small{display:block;font-size:10.5px;font-weight:650;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+nav{display:flex;gap:20px;font-size:13px;font-weight:650}
+nav a{text-decoration:none}
+.pill{background:#f7df9b;border-radius:99px;padding:5px 12px;font-size:11px;font-weight:750}
+.hero{background:radial-gradient(circle at 86% 28%,#f5d36c 0,#f9eabc 26%,#fffaf0 60%);padding:86px 0 84px;border-bottom:1px solid var(--border)}
+.eyebrow{color:var(--red);font-size:12px;text-transform:uppercase;letter-spacing:.13em;font-weight:800;margin-bottom:18px}
+h1{font-size:clamp(42px,6.6vw,79px);letter-spacing:-.065em;line-height:1.02;font-weight:850;max-width:13em}
+.lead{font-size:clamp(17px,2.2vw,22px);color:var(--soft);max-width:44em;margin-top:22px}
+.ctas{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:7px;font-weight:700;font-size:15px;text-decoration:none}
+.btn-solid{background:var(--ink);color:#fff7e6}
+.btn-line{border:1px solid var(--ink);color:var(--ink)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:30px}
+.chip{border:1px solid var(--border);background:var(--white);border-radius:99px;padding:5px 13px;font-size:12.5px;font-weight:650}
+section{padding:70px 0;border-bottom:1px solid var(--border)}
+.kicker{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--red);font-weight:800}
+h2{font-size:clamp(27px,3.7vw,42px);letter-spacing:-.048em;line-height:1.08;margin:10px 0 12px}
+.deck{font-size:18px;color:var(--soft);max-width:46em}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:34px}
+.card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:27px;min-height:220px}
+.card .num{color:var(--red);font-size:12px;font-weight:850}
+.card h3{font-size:23px;letter-spacing:-.03em;margin:8px 0 10px;line-height:1.15}
+.card p{font-size:15px;color:var(--soft)}
+.tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:var(--cream);border-radius:5px;padding:3px 8px;margin-bottom:10px}
+.card a{font-weight:700;font-size:14px;text-decoration:none;color:var(--red)}
+.loop{display:flex;gap:0;flex-wrap:wrap;margin-top:30px;border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.loop div{flex:1;min-width:140px;background:var(--white);padding:18px;border-right:1px solid var(--border)}
+.loop div:last-child{border-right:none}
+.loop b{display:block;font-size:15px}
+.loop span{font-size:13px;color:var(--soft)}
+.plan{display:grid;grid-template-columns:1.25fr 1fr;gap:44px;margin-top:34px}
+.step{border-top:1px solid var(--border);padding:16px 0;display:grid;grid-template-columns:85px 1fr;gap:14px}
+.step .wk{color:var(--red);font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;padding-top:3px}
+.step h4{font-size:17px;margin-bottom:4px}
+.step p{font-size:14.5px;color:var(--soft)}
+.mrow{display:flex;border-top:1px solid var(--border);padding:13px 0;font-size:15px}
+.mrow .lab{width:110px;flex:none;color:var(--red);font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.08em;padding-top:3px}
+.callout{background:var(--cream);border-left:4px solid var(--red);padding:23px;font-size:17px;margin-top:34px}
+.ctaband{background:var(--ink);color:#fff7e6;padding:64px 0}
+.ctaband h2{color:#fff7e6}
+.ctaband .deck{color:#e8dcc4}
+.btn-gold{background:var(--gold);color:var(--ink);margin-top:24px}
+footer{background:#211b17;color:#cabba7;font-size:12px;padding:26px 0}
+.foot-in{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:820px){.cards{grid-template-columns:1fr}.plan{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="sitebar"><div class="shell sitebar-in">
+  <div class="wordmark">NK / Nikhil Khedkar<small>Senior Product Designer · Founder, TeamBotics</small></div>
+  <nav><a href="#work">Work</a><a href="#process">Process</a><a href="#fit">Fit</a></nav>
+  <div class="pill">For Relay · Senior Product Designer</div>
+</div></div>
+
+<header class="hero"><div class="shell">
+  <div class="eyebrow">Portfolio · Nikhil Khedkar · Toronto</div>
+  <h1>I design products for the people the process was not designed for.</h1>
+  <p class="lead">Senior product designer, end to end: research, framing, design systems, prototyping, testing, shipping, iteration. My flagship, LTB Buddy, helps legal clinics and their clients through a tribunal process that crushes small operators — designed from primary research, tested against the real government portal, refined in the field with the clinics who use it. Relay builds for small business owners. So do I. This page is the work, with live links.</p>
+  <div class="ctas"><a class="btn btn-solid" href="https://ltbbuddy.ca">See LTB Buddy live</a><a class="btn btn-line" href="#work">The work</a></div>
+  <div class="chips"><span class="chip">End-to-end ownership</span><span class="chip">Design systems in Figma</span><span class="chip">Research-led</span><span class="chip">Accessibility first</span></div>
+</div></header>
+
+<section id="work"><div class="shell">
+  <div class="kicker">Selected work</div>
+  <h2>Shipped, live, and used.</h2>
+  <div class="cards">
+    <div class="card"><span class="tag">Live · Public beta</span><h3>LTB Buddy</h3><p>Conversational AI for legal clinics and their clients navigating Ontario's landlord and tenant tribunal. Designed from 46 adjudicator orders read and coded; plain-language patterns for stressed first-time users; its portal assistant is tested against the real filing portal — 55 of 55 checks green.</p><p style="margin-top:10px"><a href="https://ltbbuddy.ca">ltbbuddy.ca →</a></p></div>
+    <div class="card"><span class="tag">Live</span><h3>Muse for Seniors</h3><p>Accessibility-led design for the audience products forget first: large type, plain language, an AI-literacy curriculum and a scam-defence module — designed for senior users from the first screen, not retrofitted.</p><p style="margin-top:10px"><a href="https://muse.teambotics.app/seniors">muse.teambotics.app/seniors →</a></p></div>
+    <div class="card"><span class="tag">Live · Client work</span><h3>Fielo Chatbot</h3><p>Conversational product designed and shipped for a client company — retrieval over a 164-page corpus, launched in a day, evaluated live at 16 of 16 after testing surfaced a fix.</p><p style="margin-top:10px"><a href="https://fielo-bot.teambotics.app">fielo-bot.teambotics.app →</a></p></div>
+    <div class="card"><span class="tag">Live</span><h3>RyFine</h3><p>A consumer AI product designed, shipped and iterated in public against real usage — my standing testbed for interaction patterns that respect the user's attention.</p><p style="margin-top:10px"><a href="https://ryfine.app">ryfine.app →</a></p></div>
+  </div>
+</div></section>
+
+<section id="process"><div class="shell">
+  <div class="kicker">Process</div>
+  <h2>How a product gets from problem to shipped.</h2>
+  <div class="loop">
+    <div><b>Research</b><span>Primary sources and real users first — orders, records, frontline observation — before a single screen.</span></div>
+    <div><b>Frame</b><span>Name the actual problem in the user's terms; most design failures are framing failures.</span></div>
+    <div><b>Design</b><span>Systems before screens: components, patterns and language that scale across the product.</span></div>
+    <div><b>Test</b><span>Against the real thing wherever possible — a live portal, real cases, actual users.</span></div>
+    <div><b>Ship and refine</b><span>Release, watch, listen, iterate — with the users inside the loop, not after it.</span></div>
+  </div>
+  <div class="callout">At Best Buy I did frontline research as a daily practice — hundreds of customers a week — and led a team of 18 to a service turnaround from five business days to under 48 hours. Designing for real people starts with having stood in front of them.</div>
+</div></section>
+
+<section id="fit"><div class="shell">
+  <div class="kicker">Fit</div>
+  <h2>What Relay is asking for, in my record.</h2>
+  <div class="plan">
+    <div>
+      <div class="step"><div class="wk">Systems</div><div><h4>Design systems, built and maintained</h4><p>Figma components, auto-layout, variables and pattern libraries — maintained across a whole fleet of live products, not just drawn once.</p></div></div>
+      <div class="step"><div class="wk">Craft</div><div><h4>End-to-end, with engineering</h4><p>I prototype in production front-end (HTML, CSS, JavaScript) as well as in Figma, and ship alongside the code — critiques and reviews included.</p></div></div>
+      <div class="step"><div class="wk">Mission</div><div><h4>Products that make a difference</h4><p>Small operators against institutional complexity is my existing practice — LTB Buddy is the proof, and Relay's owners are the same people.</p></div></div>
+    </div>
+    <div>
+      <div class="mrow"><div class="lab">Experience</div><div>5+ years product design, founder-led</div></div>
+      <div class="mrow"><div class="lab">Research</div><div>46 orders coded · clinic field testing</div></div>
+      <div class="mrow"><div class="lab">Testing</div><div>Portal-assistant suites 55 of 55 green</div></div>
+      <div class="mrow"><div class="lab">Base</div><div>Toronto · in office Tue–Thu works</div></div>
+    </div>
+  </div>
+</div></section>
+
+<div class="ctaband"><div class="shell">
+  <div class="kicker" style="color:var(--gold)">The conversation</div>
+  <h2>Ask me to walk you through any of it.</h2>
+  <p class="deck">Process, trade-offs, failures and fixes — the portfolio is live, and so am I.</p>
+  <a class="btn btn-gold" href="mailto:nikhil.d.khedkar@gmail.com">nikhil.d.khedkar@gmail.com</a>
+</div></div>
+
+<footer><div class="shell foot-in">
+  <div>Nikhil Khedkar · Toronto · 647-530-8918 · linkedin.com/in/nikhil-khedkar · github.com/nickhilster</div>
+  <div>This page and the accompanying application were prepared with AI assistance under Nikhil Khedkar's direction, and disclosed as such.</div>
+</div></footer>
+</body>
+</html>
