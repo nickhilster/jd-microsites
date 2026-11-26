@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nikhil Khedkar — Design Engineer · Ashby</title>
+<style>
+:root{--paper:#fffaf0;--cream:#f9edce;--ink:#302923;--soft:#665950;--gold:#e9b642;--gold2:#f2d480;--red:#a53e2e;--border:#d6cbb7;--white:#fffefb}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.53}
+a{color:inherit}
+.shell{max-width:1110px;margin:0 auto;padding:0 28px}
+.sitebar{background:var(--white);border-bottom:1px solid var(--border)}
+.sitebar-in{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px;flex-wrap:wrap}
+.wordmark{font-size:17px;font-weight:850;letter-spacing:-.04em}
+.wordmark small{display:block;font-size:10.5px;font-weight:650;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+nav{display:flex;gap:20px;font-size:13px;font-weight:650}
+nav a{text-decoration:none}
+.pill{background:#f7df9b;border-radius:99px;padding:5px 12px;font-size:11px;font-weight:750}
+.hero{background:radial-gradient(circle at 86% 28%,#f5d36c 0,#f9eabc 26%,#fffaf0 60%);padding:86px 0 84px;border-bottom:1px solid var(--border)}
+.eyebrow{color:var(--red);font-size:12px;text-transform:uppercase;letter-spacing:.13em;font-weight:800;margin-bottom:18px}
+h1{font-size:clamp(42px,6.6vw,79px);letter-spacing:-.065em;line-height:1.02;font-weight:850;max-width:13em}
+.lead{font-size:clamp(17px,2.2vw,22px);color:var(--soft);max-width:44em;margin-top:22px}
+.ctas{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:7px;font-weight:700;font-size:15px;text-decoration:none}
+.btn-solid{background:var(--ink);color:#fff7e6}
+.btn-line{border:1px solid var(--ink);color:var(--ink)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:30px}
+.chip{border:1px solid var(--border);background:var(--white);border-radius:99px;padding:5px 13px;font-size:12.5px;font-weight:650}
+section{padding:70px 0;border-bottom:1px solid var(--border)}
+.kicker{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--red);font-weight:800}
+h2{font-size:clamp(27px,3.7vw,42px);letter-spacing:-.048em;line-height:1.08;margin:10px 0 12px}
+.deck{font-size:18px;color:var(--soft);max-width:46em}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:34px}
+.card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:27px;min-height:220px}
+.card .num{color:var(--red);font-size:12px;font-weight:850}
+.card h3{font-size:23px;letter-spacing:-.03em;margin:8px 0 10px;line-height:1.15}
+.card p{font-size:15px;color:var(--soft)}
+.tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:var(--cream);border-radius:5px;padding:3px 8px;margin-bottom:10px}
+.card a{font-weight:700;font-size:14px;text-decoration:none;color:var(--red)}
+.loop{display:flex;gap:0;flex-wrap:wrap;margin-top:30px;border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.loop div{flex:1;min-width:140px;background:var(--white);padding:18px;border-right:1px solid var(--border)}
+.loop div:last-child{border-right:none}
+.loop b{display:block;font-size:15px}
+.loop span{font-size:13px;color:var(--soft)}
+.plan{display:grid;grid-template-columns:1.25fr 1fr;gap:44px;margin-top:34px}
+.step{border-top:1px solid var(--border);padding:16px 0;display:grid;grid-template-columns:85px 1fr;gap:14px}
+.step .wk{color:var(--red);font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;padding-top:3px}
+.step h4{font-size:17px;margin-bottom:4px}
+.step p{font-size:14.5px;color:var(--soft)}
+.mrow{display:flex;border-top:1px solid var(--border);padding:13px 0;font-size:15px}
+.mrow .lab{width:110px;flex:none;color:var(--red);font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.08em;padding-top:3px}
+.callout{background:var(--cream);border-left:4px solid var(--red);padding:23px;font-size:17px;margin-top:34px}
+.ctaband{background:var(--ink);color:#fff7e6;padding:64px 0}
+.ctaband h2{color:#fff7e6}
+.ctaband .deck{color:#e8dcc4}
+.btn-gold{background:var(--gold);color:var(--ink);margin-top:24px}
+footer{background:#211b17;color:#cabba7;font-size:12px;padding:26px 0}
+.foot-in{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:820px){.cards{grid-template-columns:1fr}.plan{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="sitebar"><div class="shell sitebar-in">
+  <div class="wordmark">NK / Nikhil Khedkar<small>Design Engineer · Founder, TeamBotics</small></div>
+  <nav><a href="#work">Work</a><a href="#demos">Demos</a><a href="#fit">Fit</a></nav>
+  <div class="pill">For Ashby · Design Engineer, Canada</div>
+</div></div>
+
+<header class="hero"><div class="shell">
+  <div class="eyebrow">Portfolio · Nikhil Khedkar · Toronto · Remote, Canada</div>
+  <h1>Design engineering is where my DNA is set, too.</h1>
+  <p class="lead">Your posting says the design engineering team is where Ashby's standards come from. Mine come from the same place: systems designed in Figma and shipped as production front-ends, owned end to end, with craft as the standard rather than the aspiration. I run a fleet of live products that way — and because work speaks better in motion than in adjectives, most of them have a demo video. Watch them below.</p>
+  <div class="ctas"><a class="btn btn-solid" href="#demos">Watch the demos</a><a class="btn btn-line" href="#work">The work</a></div>
+  <div class="chips"><span class="chip">End-to-end ownership</span><span class="chip">Systems that ship</span><span class="chip">Async by default</span><span class="chip">Day-one shipper</span></div>
+</div></header>
+
+<section id="work"><div class="shell">
+  <div class="kicker">Selected work</div>
+  <h2>Owned, shipped, maintained.</h2>
+  <div class="cards">
+    <div class="card"><span class="tag">Live · Public beta</span><h3>LTB Buddy</h3><p>A conversational AI for legal clinics and their clients: a plain-language component system for stressed first-time users, and a browser assistant tested against the real tribunal filing portal — 55 of 55 checks green.</p><p style="margin-top:10px"><a href="https://ltbbuddy.ca">ltbbuddy.ca →</a></p></div>
+    <div class="card"><span class="tag">Prototype</span><h3>CodexSidecar</h3><p>A desktop console for directing coding-agent sessions — a product built for technical users, and the interface between a designer and the agents who build with him.</p><p style="margin-top:10px"><a href="https://teambotics.app">teambotics.app →</a></p></div>
+    <div class="card"><span class="tag">Live</span><h3>Code2Motion</h3><p>A desktop product that turns code work into motion — designed, built, and published on the Microsoft Store under TeamBotics.</p><p style="margin-top:10px"><a href="https://code2motion.app">code2motion.app →</a></p></div>
+    <div class="card"><span class="tag">Live · Fleet-wide</span><h3>One system, many products</h3><p>Shared tokens, variables and components carried across every live product and site I ship — maintained by the same person who designs and builds from them, which is why they stay honest.</p><p style="margin-top:10px"><a href="https://github.com/nickhilster">github.com/nickhilster →</a></p></div>
+  </div>
+</div></section>
+
+<section id="demos"><div class="shell">
+  <div class="kicker">Watch the work</div>
+  <h2>Demo videos — the products in motion.</h2>
+  <div class="cards">
+    <div class="card"><span class="tag">Video · 1:37</span><h3>LTB Buddy — how it works for tenants</h3><p>Tell your story, get it organized: the conversational intake, live.</p><p style="margin-top:10px"><a href="https://youtu.be/8xOBq0e6YRY">Watch on YouTube →</a></p></div>
+    <div class="card"><span class="tag">Video</span><h3>LTB Buddy — the clinic review tool</h3><p>The guided tour for clinic teams who use it with real clients.</p><p style="margin-top:10px"><a href="https://youtu.be/3TcT-xHMo40">Watch on YouTube →</a></p></div>
+    <div class="card"><span class="tag">Video · 0:47</span><h3>CodexSidecar — Demo</h3><p>Directing coding agents from a designed console.</p><p style="margin-top:10px"><a href="https://youtu.be/5E5Z4YG1StE">Watch on YouTube →</a></p></div>
+    <div class="card"><span class="tag">Video</span><h3>Code2Motion — Demo</h3><p>Code work, turned into motion.</p><p style="margin-top:10px"><a href="https://youtu.be/Tfwbqg4Zz5Y">Watch on YouTube →</a></p></div>
+    <div class="card"><span class="tag">Video</span><h3>MDownManager — Demo</h3><p>A local-first markdown knowledge layer with semantic search.</p><p style="margin-top:10px"><a href="https://youtu.be/B2PEnevDKzk">Watch on YouTube →</a></p></div>
+    <div class="card"><span class="tag">Video</span><h3>StoryTeller — Demo</h3><p>Sources in, sourced knowledge graphs out.</p><p style="margin-top:10px"><a href="https://youtu.be/tc_ynR0gMDA">Watch on YouTube →</a></p></div>
+    <div class="card"><span class="tag">Video</span><h3>Claim Checker — How It Works</h3><p>The verification practice, explained by the product itself.</p><p style="margin-top:10px"><a href="https://youtu.be/6NeRnEJCf2I">Watch on YouTube →</a></p></div>
+    <div class="card"><span class="tag">Channel</span><h3>Everything else</h3><p>Geek Doctor, RedactorBuddy, the RBH Marketer Agent, IKOKI — the full shelf lives on the TeamBotics channel.</p><p style="margin-top:10px"><a href="https://www.youtube.com/@Teambotics-909">youtube.com/@Teambotics-909 →</a></p></div>
+  </div>
+</div></section>
+
+<section id="fit"><div class="shell">
+  <div class="kicker">Fit</div>
+  <h2>What the role asks, in my record.</h2>
+  <div class="plan">
+    <div>
+      <div class="step"><div class="wk">Systems</div><div><h4>Design systems, built and maintained</h4><p>Figma tokens, variables and components — implemented in production front-ends and evolved across a fleet, not handed off.</p></div></div>
+      <div class="step"><div class="wk">Method</div><div><h4>Forward deployed, day one</h4><p>Put me inside your stack and I ship into it from day one, learning your system while delivering into it. Your onboarding promises a day-one production ship — that is my normal mode.</p></div></div>
+      <div class="step"><div class="wk">Bar</div><div><h4>Define what good looks like</h4><p>Test-gated releases, line-by-line diff review, and demos for everything — quality you can watch, not just read about.</p></div></div>
+    </div>
+    <div>
+      <div class="mrow"><div class="lab">Stack</div><div>HTML · CSS · JavaScript · React/TypeScript codebases</div></div>
+      <div class="mrow"><div class="lab">Discipline</div><div>Git · review · test-gated releases</div></div>
+      <div class="mrow"><div class="lab">Testing</div><div>Portal-assistant suites 55 of 55 green</div></div>
+      <div class="mrow"><div class="lab">Base</div><div>Toronto · remote-first, async</div></div>
+    </div>
+  </div>
+</div></section>
+
+<div class="ctaband"><div class="shell">
+  <div class="kicker" style="color:var(--gold)">The conversation</div>
+  <h2>Your process starts with a screen-share. Good.</h2>
+  <p class="deck">There is plenty to show — systems, ships, and the demos above. I would welcome the intro call.</p>
+  <a class="btn btn-gold" href="mailto:nikhil.d.khedkar@gmail.com">nikhil.d.khedkar@gmail.com</a>
+</div></div>
+
+<footer><div class="shell foot-in">
+  <div>Nikhil Khedkar · Toronto · 647-530-8918 · linkedin.com/in/nikhil-khedkar · github.com/nickhilster</div>
+  <div>This page and the accompanying application were prepared with AI assistance under Nikhil Khedkar's direction, and disclosed as such.</div>
+</div></footer>
+</body>
+</html>
