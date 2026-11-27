@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nikhil Khedkar — Content Ops &amp; Tooling · Autodesk Assistant</title>
+<style>
+:root{--paper:#fffaf0;--cream:#f9edce;--ink:#302923;--soft:#665950;--gold:#e9b642;--gold2:#f2d480;--red:#a53e2e;--border:#d6cbb7;--white:#fffefb}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.53}
+a{color:inherit}
+.shell{max-width:1110px;margin:0 auto;padding:0 28px}
+.sitebar{background:var(--white);border-bottom:1px solid var(--border)}
+.sitebar-in{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px;flex-wrap:wrap}
+.wordmark{font-size:17px;font-weight:850;letter-spacing:-.04em}
+.wordmark small{display:block;font-size:10.5px;font-weight:650;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+nav{display:flex;gap:20px;font-size:13px;font-weight:650}
+nav a{text-decoration:none}
+.pill{background:#f7df9b;border-radius:99px;padding:5px 12px;font-size:11px;font-weight:750}
+.hero{background:radial-gradient(circle at 86% 28%,#f5d36c 0,#f9eabc 26%,#fffaf0 60%);padding:86px 0 84px;border-bottom:1px solid var(--border)}
+.eyebrow{color:var(--red);font-size:12px;text-transform:uppercase;letter-spacing:.13em;font-weight:800;margin-bottom:18px}
+h1{font-size:clamp(42px,6.6vw,79px);letter-spacing:-.065em;line-height:1.02;font-weight:850;max-width:13em}
+.lead{font-size:clamp(17px,2.2vw,22px);color:var(--soft);max-width:44em;margin-top:22px}
+.ctas{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:7px;font-weight:700;font-size:15px;text-decoration:none}
+.btn-solid{background:var(--ink);color:#fff7e6}
+.btn-line{border:1px solid var(--ink);color:var(--ink)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:30px}
+.chip{border:1px solid var(--border);background:var(--white);border-radius:99px;padding:5px 13px;font-size:12.5px;font-weight:650}
+section{padding:70px 0;border-bottom:1px solid var(--border)}
+.kicker{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--red);font-weight:800}
+h2{font-size:clamp(27px,3.7vw,42px);letter-spacing:-.048em;line-height:1.08;margin:10px 0 12px}
+.deck{font-size:18px;color:var(--soft);max-width:46em}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:34px}
+.card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:27px;min-height:220px}
+.card .num{color:var(--red);font-size:12px;font-weight:850}
+.card h3{font-size:23px;letter-spacing:-.03em;margin:8px 0 10px;line-height:1.15}
+.card p{font-size:15px;color:var(--soft)}
+.tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:var(--cream);border-radius:5px;padding:3px 8px;margin-bottom:10px}
+.card a{font-weight:700;font-size:14px;text-decoration:none;color:var(--red)}
+.loop{display:flex;gap:0;flex-wrap:wrap;margin-top:30px;border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.loop div{flex:1;min-width:140px;background:var(--white);padding:18px;border-right:1px solid var(--border)}
+.loop div:last-child{border-right:none}
+.loop b{display:block;font-size:15px}
+.loop span{font-size:13px;color:var(--soft)}
+.plan{display:grid;grid-template-columns:1.25fr 1fr;gap:44px;margin-top:34px}
+.step{border-top:1px solid var(--border);padding:16px 0;display:grid;grid-template-columns:85px 1fr;gap:14px}
+.step .wk{color:var(--red);font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;padding-top:3px}
+.step h4{font-size:17px;margin-bottom:4px}
+.step p{font-size:14.5px;color:var(--soft)}
+.mrow{display:flex;border-top:1px solid var(--border);padding:13px 0;font-size:15px}
+.mrow .lab{width:110px;flex:none;color:var(--red);font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.08em;padding-top:3px}
+.callout{background:var(--cream);border-left:4px solid var(--red);padding:23px;font-size:17px;margin-top:34px}
+.ctaband{background:var(--ink);color:#fff7e6;padding:64px 0}
+.ctaband h2{color:#fff7e6}
+.ctaband .deck{color:#e8dcc4}
+.btn-gold{background:var(--gold);color:var(--ink);margin-top:24px}
+footer{background:#211b17;color:#cabba7;font-size:12px;padding:26px 0}
+.foot-in{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:820px){.cards{grid-template-columns:1fr}.plan{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="sitebar"><div class="shell sitebar-in">
+  <div class="wordmark">Nikhil Khedkar<small>Content Operations · Tooling · Evaluation</small></div>
+  <nav><a href="#loop">The system</a><a href="#evidence">Evidence</a><a href="#plan">For Autodesk Assistant</a></nav>
+  <div class="pill">For Autodesk · Agentic AI</div>
+</div></div>
+
+<header class="hero"><div class="shell">
+  <div class="eyebrow">Portfolio · Nikhil Khedkar · Toronto</div>
+  <h1>Many teams. One voice. A system that keeps it true.</h1>
+  <p class="lead">I learned content operations in VFX production — Legend 3D, Famous Studios — where hundreds of contributors fed one pipeline and quality was a gate. Today I build that discipline for agentic content at TeamBotics: a governed studio, production tooling on versioned contracts, and evaluation frameworks that hold authored and AI-generated content to a sourced standard. The work is published. The system is the portfolio.</p>
+  <div class="ctas"><a class="btn btn-solid" href="#evidence">The evidence</a><a class="btn btn-line" href="#plan">What I would bring</a></div>
+  <div class="chips"><span class="chip">Content governance</span><span class="chip">Pipeline tooling</span><span class="chip">Evaluation frameworks</span><span class="chip">Knowledge graphs</span><span class="chip">VFX production roots</span></div>
+</div></header>
+
+<section id="loop"><div class="shell">
+  <div class="kicker">The system</div>
+  <h2>How the pipeline runs.</h2>
+  <div class="loop"><div><b>Govern</b><span>constitution, roles, approvals — who may decide what</span></div><div><b>Model</b><span>schemas for canon, provenance, assets</span></div><div><b>Produce</b><span>tooling renders; humans direct</span></div><div><b>Evaluate</b><span>sourced checks on authored and AI output</span></div><div><b>Publish</b><span>finished works, in the open</span></div>
+  </div>
+  <div class="callout">The Studio is never copied into a project. Projects consume it as a pinned, read-only standard — the same way a content model should work: set once, inherited everywhere, changed deliberately.</div>
+</div></section>
+
+<section id="evidence"><div class="shell">
+  <div class="kicker">Evidence</div>
+  <h2>Governance, tooling, output.</h2>
+  <div class="cards">
+    <div class="card"><span class="tag">Governance</span><h3>ComicBotics Studio</h3><p>A written constitution, 28 agent role specifications across seven rooms, approval protocols, and schemas for provenance, canon and run logs — a contribution model with decision rights, running in production.</p></div>
+    <div class="card"><span class="tag">Tooling</span><h3>PanelForge + Audio-Studio</h3><p>Panel direction and strict panel-JSON validation feeding ComfyUI/FLUX rendering; an audio line on production contracts and validated episode files. Both connect to the Studio through a versioned bridge contract.</p></div>
+    <div class="card"><span class="tag">Published</span><h3>Neural Breach</h3><p>An AI graphic novel produced end-to-end through the pipeline, built on a real 2026 agent-security incident.</p><p style="margin-top:10px"><a href="https://neuralbreach.nikdesign.ca/">neuralbreach.nikdesign.ca →</a></p></div>
+    <div class="card"><span class="tag">Published</span><h3>Small Wonder</h3><p>Eleven one-page comic issues re-reading the 1980s sitcom about a child android — the pipeline's long-running proof of consistency across a series.</p><p style="margin-top:10px"><a href="https://smallwonder.nikdesign.ca/smallwonder/">smallwonder.nikdesign.ca →</a></p></div>
+    <div class="card"><span class="tag">Evaluation</span><h3>Claim Checker</h3><p>A quality framework for published claims: sourced evidence for every claim, right-of-reply, published correction windows. Content quality as an operating standard, applied to real investigations.</p><p style="margin-top:10px"><a href="https://youtu.be/6NeRnEJCf2I">Watch how it works →</a></p></div>
+    <div class="card"><span class="tag">Roots</span><h3>VFX production, 2009–2018</h3><p>Team lead at Famous Studios; production coordination at Legend 3D on Marvel, Disney and Warner Bros. programs. Tool fluency from the source: 3ds Max in the Discreet era, Maya in the Alias era. Film credits on IMDb.</p></div>
+  </div>
+</div></section>
+
+<section id="plan"><div class="shell">
+  <div class="kicker">For Autodesk Assistant</div>
+  <h2>What I would do with this seat.</h2>
+  <div class="plan"><div>
+    <div class="step"><div class="wk">Model</div><div><h4>One content model for the Assistant</h4><p>Guidance, knowledge, conversational and learning content as structured, typed, retrievable assets — with the taxonomy and metadata that make an agent's answers traceable to a source someone owns.</p></div></div>
+    <div class="step"><div class="wk">Govern</div><div><h4>Ownership people can see</h4><p>Contribution models and decision rights that survive a matrixed org: who authors, who reviews, who approves, who retires — written down, versioned, and enforced by the tooling rather than by meetings.</p></div></div>
+    <div class="step"><div class="wk">Evaluate</div><div><h4>Quality you can measure</h4><p>Evaluation frameworks for authored and AI-generated content alike — sourced checks, sampled human review, correction loops — so trust in the Assistant is a metric, not a mood.</p></div></div>
+  </div><div>
+    <div class="mrow"><div class="lab">Governance</div><div>Constitution + 28 role specs + approval protocols, in production</div></div>
+    <div class="mrow"><div class="lab">Tooling</div><div>Versioned bridge contracts between studio and production tools</div></div>
+    <div class="mrow"><div class="lab">Published</div><div>Neural Breach · Small Wonder (11 issues) · Boardy at the Desk · PROVENANCE audio movie</div></div>
+    <div class="mrow"><div class="lab">Retrieval</div><div>NikBot: 73 documents, vector search, grounding hardened against traced hallucinations</div></div>
+    <div class="mrow"><div class="lab">Base</div><div>Toronto — a posted location for this role</div></div>
+  </div>
+  </div>
+</div></section>
+
+<div class="ctaband"><div class="shell">
+  <div class="kicker" style="color:var(--gold)">The conversation</div>
+  <h2>An assistant is a content ecosystem with a voice.</h2>
+  <p class="deck">I have spent my career building the systems that keep ecosystems like that cohesive, discoverable and trusted — first for film, now for agents. I would welcome the conversation.</p>
+  <a class="btn btn-gold" href="mailto:nikhil.d.khedkar@gmail.com">nikhil.d.khedkar@gmail.com</a>
+</div></div>
+
+<footer><div class="shell foot-in">
+  <div>Nikhil Khedkar · Toronto · 647-530-8918 · linkedin.com/in/nikhil-khedkar · github.com/nickhilster</div>
+  <div>This page and the accompanying application were prepared with AI assistance under Nikhil Khedkar's direction, and disclosed as such.</div>
+</div></footer>
+</body>
+</html>
