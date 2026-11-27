@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nikhil Khedkar — Principal Experience Designer · Autodesk Tandem</title>
+<style>
+:root{--paper:#fffaf0;--cream:#f9edce;--ink:#302923;--soft:#665950;--gold:#e9b642;--gold2:#f2d480;--red:#a53e2e;--border:#d6cbb7;--white:#fffefb}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.53}
+a{color:inherit}
+.shell{max-width:1110px;margin:0 auto;padding:0 28px}
+.sitebar{background:var(--white);border-bottom:1px solid var(--border)}
+.sitebar-in{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px;flex-wrap:wrap}
+.wordmark{font-size:17px;font-weight:850;letter-spacing:-.04em}
+.wordmark small{display:block;font-size:10.5px;font-weight:650;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+nav{display:flex;gap:20px;font-size:13px;font-weight:650}
+nav a{text-decoration:none}
+.pill{background:#f7df9b;border-radius:99px;padding:5px 12px;font-size:11px;font-weight:750}
+.hero{background:radial-gradient(circle at 86% 28%,#f5d36c 0,#f9eabc 26%,#fffaf0 60%);padding:86px 0 84px;border-bottom:1px solid var(--border)}
+.eyebrow{color:var(--red);font-size:12px;text-transform:uppercase;letter-spacing:.13em;font-weight:800;margin-bottom:18px}
+h1{font-size:clamp(42px,6.6vw,79px);letter-spacing:-.065em;line-height:1.02;font-weight:850;max-width:13em}
+.lead{font-size:clamp(17px,2.2vw,22px);color:var(--soft);max-width:44em;margin-top:22px}
+.ctas{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:7px;font-weight:700;font-size:15px;text-decoration:none}
+.btn-solid{background:var(--ink);color:#fff7e6}
+.btn-line{border:1px solid var(--ink);color:var(--ink)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:30px}
+.chip{border:1px solid var(--border);background:var(--white);border-radius:99px;padding:5px 13px;font-size:12.5px;font-weight:650}
+section{padding:70px 0;border-bottom:1px solid var(--border)}
+.kicker{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--red);font-weight:800}
+h2{font-size:clamp(27px,3.7vw,42px);letter-spacing:-.048em;line-height:1.08;margin:10px 0 12px}
+.deck{font-size:18px;color:var(--soft);max-width:46em}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:34px}
+.card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:27px;min-height:220px}
+.card .num{color:var(--red);font-size:12px;font-weight:850}
+.card h3{font-size:23px;letter-spacing:-.03em;margin:8px 0 10px;line-height:1.15}
+.card p{font-size:15px;color:var(--soft)}
+.tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:var(--cream);border-radius:5px;padding:3px 8px;margin-bottom:10px}
+.card a{font-weight:700;font-size:14px;text-decoration:none;color:var(--red)}
+.loop{display:flex;gap:0;flex-wrap:wrap;margin-top:30px;border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.loop div{flex:1;min-width:140px;background:var(--white);padding:18px;border-right:1px solid var(--border)}
+.loop div:last-child{border-right:none}
+.loop b{display:block;font-size:15px}
+.loop span{font-size:13px;color:var(--soft)}
+.plan{display:grid;grid-template-columns:1.25fr 1fr;gap:44px;margin-top:34px}
+.step{border-top:1px solid var(--border);padding:16px 0;display:grid;grid-template-columns:85px 1fr;gap:14px}
+.step .wk{color:var(--red);font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;padding-top:3px}
+.step h4{font-size:17px;margin-bottom:4px}
+.step p{font-size:14.5px;color:var(--soft)}
+.mrow{display:flex;border-top:1px solid var(--border);padding:13px 0;font-size:15px}
+.mrow .lab{width:110px;flex:none;color:var(--red);font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.08em;padding-top:3px}
+.callout{background:var(--cream);border-left:4px solid var(--red);padding:23px;font-size:17px;margin-top:34px}
+.ctaband{background:var(--ink);color:#fff7e6;padding:64px 0}
+.ctaband h2{color:#fff7e6}
+.ctaband .deck{color:#e8dcc4}
+.btn-gold{background:var(--gold);color:var(--ink);margin-top:24px}
+footer{background:#211b17;color:#cabba7;font-size:12px;padding:26px 0}
+.foot-in{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:820px){.cards{grid-template-columns:1fr}.plan{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="sitebar"><div class="shell sitebar-in">
+  <div class="wordmark">Nikhil Khedkar<small>Experience Design · 3D &amp; Spatial · Data Visualization</small></div>
+  <nav><a href="#loop">The approach</a><a href="#evidence">Evidence</a><a href="#plan">For Tandem</a></nav>
+  <div class="pill">For Autodesk Tandem</div>
+</div></div>
+
+<header class="hero"><div class="shell">
+  <div class="eyebrow">Portfolio · Nikhil Khedkar · Toronto</div>
+  <h1>Buildings are data. I design how people read them.</h1>
+  <p class="lead">My career began in 3D — team lead at Famous Studios, production coordination at Legend 3D — and was formalized in spatial design at the University of Toronto's XR program. Today I design and ship interactive technology at TeamBotics: dashboards, knowledge graphs, and AI products whose whole problem is complex data made intuitive. A digital twin is a spatial model carrying live data. That is the intersection I have been walking toward for fifteen years.</p>
+  <div class="ctas"><a class="btn btn-solid" href="#evidence">The evidence</a><a class="btn btn-line" href="#plan">What I would bring to Tandem</a></div>
+  <div class="chips"><span class="chip">3D / spatial products</span><span class="chip">XR — University of Toronto</span><span class="chip">Data visualization</span><span class="chip">AI products</span><span class="chip">End-to-end ownership</span></div>
+</div></header>
+
+<section id="loop"><div class="shell">
+  <div class="kicker">The approach</div>
+  <h2>From model to insight, in five moves.</h2>
+  <div class="loop"><div><b>See</b><span>the space as the user holds it in their head</span></div><div><b>Read</b><span>data given hierarchy, not just charts</span></div><div><b>Decide</b><span>dashboards that answer the next question</span></div><div><b>Act</b><span>workflows that fit the real job</span></div><div><b>Learn</b><span>research and testing, every cycle</span></div>
+  </div>
+  <div class="callout">A 3D background teaches the first move better than any other: depth and hierarchy decide what a person understands in the first three seconds — in a film frame, in an XR scene, or in a building's live twin.</div>
+</div></section>
+
+<section id="evidence"><div class="shell">
+  <div class="kicker">Evidence</div>
+  <h2>The arc, on the record.</h2>
+  <div class="cards">
+    <div class="card"><span class="tag">Legend 3D · 2014–2018</span><h3>Spatial storytelling, industrial scale</h3><p>Coordinating stereoscopic 3D production for major film releases — four years inside professional 3D pipelines, where depth, parallax and visual hierarchy are the craft.</p></div>
+    <div class="card"><span class="tag">University of Toronto · 2022</span><h3>Trained in spatial interaction</h3><p>Interaction Design and Prototyping for XR at U of T's School of Continuing Studies, with a Circuit Stream Certified XR Designer credential — spatial interfaces studied formally, not improvised.</p></div>
+    <div class="card"><span class="tag">TeamBotics · Live</span><h3>Code2Motion</h3><p>Interactive technology that turns code work into motion — spatial and motion design shipped as a product through the Microsoft Store.</p><p style="margin-top:10px"><a href="https://youtu.be/Tfwbqg4Zz5Y">Watch the demo →</a></p></div>
+    <div class="card"><span class="tag">TeamBotics · Live</span><h3>StoryTeller</h3><p>Research rendered as explorable knowledge graphs — data visualization for evidence, built for people who need to see connections, not read piles.</p><p style="margin-top:10px"><a href="https://youtu.be/tc_ynR0gMDA">Watch the demo →</a></p></div>
+    <div class="card"><span class="tag">Best Buy Canada · Geek Squad</span><h3>Operational data, decided weekly</h3><p>The Power BI and Titan dashboards I built turned a service operation's data into decisions: turnaround from about five business days to under 48 hours, NPS leading 16 consecutive months.</p></div>
+    <div class="card"><span class="tag">TeamBotics · Live</span><h3>LTB Buddy</h3><p>Complex tribunal workflows redesigned as guided conversations for legal clinics — the same discipline Tandem needs: expert-domain complexity, made legible to the person doing the job.</p><p style="margin-top:10px"><a href="https://ltbbuddy.ca">ltbbuddy.ca →</a></p></div>
+  </div>
+</div></section>
+
+<section id="plan"><div class="shell">
+  <div class="kicker">For Tandem</div>
+  <h2>What I would do with this seat.</h2>
+  <div class="plan"><div>
+    <div class="step"><div class="wk">Model</div><div><h4>Start from the operator's mental model</h4><p>Interviews and workshops with the people who run buildings — how they already think about their spaces — before a single screen is drawn. Spatial products fail when the model's logic is the database's, not the user's.</p></div></div>
+    <div class="step"><div class="wk">Visualize</div><div><h4>Hierarchy for live building data</h4><p>BIM geometry plus IoT, BMS and CMMS streams is a firehose. The design work is deciding what surfaces, what waits, and what only appears when it matters — depth and emphasis, the 3D instincts, applied to data.</p></div></div>
+    <div class="step"><div class="wk">Validate</div><div><h4>Prototype with operators, early</h4><p>Interactive prototypes in front of real users, concept and usability testing every cycle — the practice I run on every product I ship now.</p></div></div>
+  </div><div>
+    <div class="mrow"><div class="lab">3D career</div><div>Since 2009 — Famous Studios, Legend 3D</div></div>
+    <div class="mrow"><div class="lab">Spatial training</div><div>U of T XR program + Circuit Stream, 2022</div></div>
+    <div class="mrow"><div class="lab">Dashboards</div><div>Power BI / Titan at Best Buy; adaptive product dashboards at TeamBotics</div></div>
+    <div class="mrow"><div class="lab">AI products</div><div>LLMs and agents, designed and shipped (Fielo, NikBot, LTB Buddy)</div></div>
+    <div class="mrow"><div class="lab">Base</div><div>Toronto — a posted location for this role</div></div>
+  </div>
+  </div>
+</div></section>
+
+<div class="ctaband"><div class="shell">
+  <div class="kicker" style="color:var(--gold)">The conversation</div>
+  <h2>A twin is only useful if a human can read it.</h2>
+  <p class="deck">That reading — spatial, visual, human — is the work I have done from every direction: film, XR, dashboards, and live AI products. I would welcome the conversation.</p>
+  <a class="btn btn-gold" href="mailto:nikhil.d.khedkar@gmail.com">nikhil.d.khedkar@gmail.com</a>
+</div></div>
+
+<footer><div class="shell foot-in">
+  <div>Nikhil Khedkar · Toronto · 647-530-8918 · linkedin.com/in/nikhil-khedkar · github.com/nickhilster</div>
+  <div>This page and the accompanying application were prepared with AI assistance under Nikhil Khedkar's direction, and disclosed as such.</div>
+</div></footer>
+</body>
+</html>
